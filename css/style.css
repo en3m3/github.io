@@ -1,0 +1,88 @@
+body {
+	padding: 0;
+	max-width: 80vw;
+	margin: 0 auto;
+	color: #505050;
+	font-family: 'Cabin', sans-serif;
+}
+header, footer {
+	background-color: #97d0ff;
+	background: linear-gradient(0deg, rgba(42, 125, 193, 1) 0%, rgba(151, 208, 255, 1) 20%, rgba(151, 208, 255, 1) 80%, rgba(42, 125, 193, 1) 100%);
+	padding: 50px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 #2a7dc1;
+	border: 5px ridge #505050;
+	border-left: none;
+	border-right: none;
+}
+#main {
+	background-color: #f0eee4;
+	background: linear-gradient(0deg, rgba(199, 198, 172, 1) 0%, rgba(240, 238, 228, 1) 20%, rgba(240, 238, 228, 1) 80%, rgba(199, 198, 172, 1) 100%);
+	padding: 100px;
+	z-index: 1;
+	position: relative;
+}
+.underlined {
+	border-bottom: 7px double #000;
+	width: 400px;
+}
+.polaroidcontainer {
+	position: relative;
+	float: right;
+}
+.polaroid {
+	width: 200px;
+	background-color: #fff;
+	padding: 20px 20px 50px 20px;
+	border: 2px solid rgba(0, 0, 0, .1);
+	border-radius: 5px;
+	position: absolute;
+	top: -200px;
+	right: 10px;
+	transform: rotate(5deg);
+	box-shadow: 0px 39px 30px -10px #000;
+}
+.polaroid::before {
+	content: " ";
+	height: 130px;
+	width: 70px;
+	background-image: url(../images/tape.png);
+	background-size: cover;
+	position: absolute;
+	top: -60px;
+	left: -10px;
+	filter: opacity(0.9) contrast(0.9);
+}
+.polaroid::after {
+	content: " ";
+	height: 130px;
+	width: 70px;
+	background-image: url(../images/tape.png);
+	background-size: cover;
+	position: absolute;
+	top: -50px;
+	left: 190px;
+	transform: rotate(205deg);
+}
+.polaroid img {
+	max-width: 100%;
+	border: 2px solid rgba(0, 0, 0, .3);
+}
+@media only screen and (max-width: 1100px) {
+	body {
+		max-width: 100vw;
+	}
+}
+@media only screen and (max-width: 870px) {
+	#main {
+		padding: 10px;
+	}
+	.polaroidcontainer {
+		float: initial;
+	}
+	.polaroid {
+		position: relative;
+		top: -30px;
+		right: -30px;
+	}
+}
