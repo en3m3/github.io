@@ -3,7 +3,7 @@ body {
 	max-width: 80vw;
 	margin: 0 auto;
 	color: #505050;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Cabin Condensed', sans-serif;
 }
 header, footer {
 	background-color: #97d0ff;
@@ -87,5 +87,16 @@ header, footer {
 	}
 }
 @media only screen and (max-width: 600px) {
-
+	body {
+		overflow-x: hidden;
+	}
+	.underlined {
+		width: auto;
+	}	
+	.polaroid {
+		width: 150px;
+	}
+	.polaroid::after {
+		left: 150px;
+	}	
 }
