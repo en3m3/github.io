@@ -1,3 +1,15 @@
+html {
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
 body {
 	padding: 0;
 	max-width: 80vw;
@@ -14,11 +26,17 @@ header, footer {
 	border: 5px ridge #505050;
 	border-left: none;
 	border-right: none;
+    z-index: 2;
+    position: relative;	
 }
-#main {
+header {
+	z-index: 3;
+}
+
+main {
 	background-color: #f0eee4;
 	background: linear-gradient(0deg, rgba(199, 198, 172, 1) 0%, rgba(240, 238, 228, 1) 20%, rgba(240, 238, 228, 1) 80%, rgba(199, 198, 172, 1) 100%);
-	padding: 100px;
+	padding: 100px 3%;
 	z-index: 1;
 	position: relative;
 }
@@ -34,11 +52,10 @@ header, footer {
 	width: 200px;
 	background-color: #fff;
 	padding: 20px 20px 50px 20px;
+	margin-top: 20px;
 	border: 2px solid rgba(0, 0, 0, .1);
 	border-radius: 5px;
-	position: absolute;
-	top: -200px;
-	right: 10px;
+	position: relative;
 	transform: rotate(5deg);
 	box-shadow: 0px 39px 30px -10px #000;
 }
@@ -68,35 +85,39 @@ header, footer {
 	max-width: 100%;
 	border: 2px solid rgba(0, 0, 0, .3);
 }
-@media only screen and (max-width: 1100px) {
-	body {
-		max-width: 100vw;
-	}
-}
+
 @media only screen and (max-width: 870px) {
-	#main {
+	html {
+		font-size: 14px;
+	}
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+		
+	}	
+	header {
+		padding: 50px 10px 10px 10px;
+	}
+	footer {
 		padding: 10px;
 	}
-	.polaroidcontainer {
-		float: initial;
-	}
-	.polaroid {
-		position: relative;
-		top: -30px;
-		right: -30px;
-	}
-}
-@media only screen and (max-width: 600px) {
-	body {
-		overflow-x: hidden;
-	}
-	.underlined {
-		width: auto;
+	main {
+		padding: 10px;
 	}	
 	.polaroid {
 		width: 150px;
+		transform: rotate(0);
+		margin: 0 auto;
+		box-shadow: 0px 15px 30px 2px #000;
+		max-width: 100%;
 	}
 	.polaroid::after {
 		left: 150px;
+	}	
+	.polaroidcontainer {
+		float: unset;
+	}	
+	.underlined {
+		width: auto;
 	}	
 }
