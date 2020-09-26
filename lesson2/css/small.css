@@ -25,7 +25,7 @@
         align-self: flex-end;
         padding-bottom: 10px;
         color: #ffffff;
-        font-size: 2rem;        
+        font-size: 2rem;
     }
 
     .accordian-toggle:checked+.accordian-content {
@@ -36,6 +36,7 @@
         grid-row: 3;
         grid-column: 1;
     }
+
     .accordian-content .image-border {
         height: 350px;
         width: 250px;
@@ -44,7 +45,7 @@
         border: 3px solid #efecec;
         border-radius: 25px;
     }
-    
+
     .accordian-content .image-wrapper {
         display: flex;
         justify-content: center;
@@ -57,7 +58,7 @@
         padding-bottom: 50px;
         box-shadow: 8px 6px 0px 6px #525252;
         grid-row: 2;
-        grid-column: 1;        
+        grid-column: 1;
         position: relative;
     }
 
@@ -79,9 +80,9 @@
         height: 10px;
         top: 2px;
         right: 30px;
-        border-radius: 100%;    
+        border-radius: 100%;
     }
-    
+
     .image-border::before {
         content: "";
         position: absolute;
@@ -90,7 +91,7 @@
         height: 8px;
         top: 3px;
         right: 43px;
-        border-radius: 100%;    
+        border-radius: 100%;
     }
 
     h1 {
