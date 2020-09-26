@@ -17,7 +17,9 @@ body {
 	color: #505050;
 	font-family: 'Cabin Condensed', sans-serif;
 }
-header, footer {
+
+header,
+footer {
 	background-color: #97d0ff;
 	background: linear-gradient(0deg, rgba(42, 125, 193, 1) 0%, rgba(151, 208, 255, 1) 20%, rgba(151, 208, 255, 1) 80%, rgba(42, 125, 193, 1) 100%);
 	padding: 50px;
@@ -26,9 +28,10 @@ header, footer {
 	border: 5px ridge #505050;
 	border-left: none;
 	border-right: none;
-    z-index: 2;
-    position: relative;	
+	z-index: 2;
+	position: relative;
 }
+
 header {
 	z-index: 3;
 }
@@ -40,14 +43,17 @@ main {
 	z-index: 1;
 	position: relative;
 }
+
 .underlined {
 	border-bottom: 7px double #000;
 	width: 400px;
 }
+
 .polaroidcontainer {
 	position: relative;
 	float: right;
 }
+
 .polaroid {
 	width: 200px;
 	background-color: #fff;
@@ -59,6 +65,7 @@ main {
 	transform: rotate(5deg);
 	box-shadow: 0px 39px 30px -10px #000;
 }
+
 .polaroid::before {
 	content: " ";
 	height: 130px;
@@ -70,6 +77,7 @@ main {
 	left: -10px;
 	filter: opacity(0.9) contrast(0.9);
 }
+
 .polaroid::after {
 	content: " ";
 	height: 130px;
@@ -81,6 +89,7 @@ main {
 	left: 190px;
 	transform: rotate(205deg);
 }
+
 .polaroid img {
 	max-width: 100%;
 	border: 2px solid rgba(0, 0, 0, .3);
@@ -90,20 +99,25 @@ main {
 	html {
 		font-size: 14px;
 	}
+
 	body {
 		max-width: 100%;
 		overflow-x: hidden;
-		
-	}	
+
+	}
+
 	header {
 		padding: 50px 10px 10px 10px;
 	}
+
 	footer {
 		padding: 10px;
 	}
+
 	main {
 		padding: 10px;
-	}	
+	}
+
 	.polaroid {
 		width: 150px;
 		transform: rotate(0);
@@ -111,13 +125,16 @@ main {
 		box-shadow: 0px 15px 30px 2px #000;
 		max-width: 100%;
 	}
+
 	.polaroid::after {
 		left: 150px;
-	}	
+	}
+
 	.polaroidcontainer {
 		float: unset;
-	}	
+	}
+
 	.underlined {
 		width: auto;
-	}	
+	}
 }
