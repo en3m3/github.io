@@ -1,4 +1,7 @@
 @media only screen and (min-width: 768px) {
+    html {
+        font-size: 2vw;
+    }
 
     .accordian-content {
         display: grid;
@@ -16,18 +19,36 @@
         grid-column: 1;
         grid-row: 3;
     }
-
-
-    .accordian-content .image-wrapper
-    {
-        grid-row: 2;
-        grid-column: 1;
+    .accordian-content .image-border {
+        height: 350px;
+        width: 270px;
+    }
+    
+    .accordian-content .image-border {
+        height: 540px;
+        width: 320px;
     }
 
+    .accordian-title {
+        font-size: 1rem;
+    }
+    
+    
+    .accordian-toggle:checked+.accordian-content {
+        height: auto;
+        padding: 10px 10vw 70px 10vw;
+        max-height: 1300px;
+        opacity: 1;
+    }
+
+    .accordian-content .image-wrapper {
+        width: 350px;
+        height: 590px;
+    }
     #main {
         display: grid;
         grid-template-columns: 50% 50% ;
-        grid-template-rows: 100px auto auto 100px auto auto;
+        grid-template-rows: 100px 50px auto 100px 50px auto;
     }
 
     /* principle one */
@@ -72,4 +93,35 @@
         grid-row: 6;
     }    
      
+    .accordian-content .image-wrapper::after {
+        content: "";
+        position: absolute;
+        box-shadow: 0 0 5px 0 #000;
+        width: 50px;
+        height: 50px;
+        bottom: 5px;
+        border-radius: 100%;
+    }
+
+    .image-border::after {
+        content: "";
+        position: absolute;
+        box-shadow: inset 0 0 15px 0 #000;
+        width: 20px;
+        height: 20px;
+        top: 2px;
+        right: 30px;
+        border-radius: 100%;
+    }
+    .image-border::before {
+        content: "";
+        position: absolute;
+        box-shadow: inset 0 0 11px 0 #040719;
+        width: 13px;
+        height: 13px;
+        top: 6px;
+        right: 56px;
+        border-radius: 100%;
+    }
+
 }
