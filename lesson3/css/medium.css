@@ -1,11 +1,14 @@
 @media only screen and (min-width: 600px) {
-    html, body {
-        font-size: 16px;  
-        grid-template: 220px 3fr 1fr / 1fr;      
+
+    html,
+    body {
+        font-size: 16px;
+        grid-template: 220px 3fr 1fr / 1fr;
     }
+
     nav li {
         display: flex;
-        align-items: flex-end;    
+        align-items: flex-end;
     }
 
     nav ol {
@@ -17,15 +20,18 @@
         height: 50px;
         padding: 0px 40px;
     }
-    nav > ol > li a:hover {
+
+    nav>ol>li a:hover {
         text-align: center;
     }
+
     .top-bar {
         height: 160px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
     #logo img {
         max-height: 100%;
         border-style: none;
@@ -33,21 +39,23 @@
         width: 350px;
     }
 
-/*********************/
-/* Color Scheme Page */
-/*********************/
+    /*********************/
+    /* Color Scheme Page */
+    /*********************/
     .color-grid {
-        grid-template: repeat(4,1fr) / repeat(3, 1fr);
+        grid-template: repeat(4, 1fr) / repeat(3, 1fr);
     }
+
     .scenarios {
         grid-column: 1/end;
     }
-/************************/
-/* Target Audience Page */
-/************************/
+
+    /************************/
+    /* Target Audience Page */
+    /************************/
     #target-audience {
         display: grid;
-        grid-template: repeat(2,auto) / 1fr 1fr;
+        grid-template: repeat(2, auto) / 1fr 1fr;
         grid-gap: 10px;
     }
 

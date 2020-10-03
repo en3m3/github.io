@@ -1,5 +1,7 @@
 @media only screen and (min-width: 1025px) {
-    html, body {
+
+    html,
+    body {
         font-size: 18px;
     }
 
@@ -7,12 +9,13 @@
     nav ol {
         padding: 0px 200px;
     }
+
     /*********************/
     /* Color Scheme Page */
     /*********************/
     .color-grid {
-        grid-template: repeat(2,1fr) / repeat(6, 1fr);
+        grid-template: repeat(2, 1fr) / repeat(6, 1fr);
     }
-    
-    
-    }
+
+
+}
