@@ -48,7 +48,7 @@ h4 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.9rem;
     font-family: 'roboto_slabregular';
     letter-spacing: 0.05rem;
 }
@@ -128,13 +128,16 @@ div {
 }
 
 .cta {
+    display: none;
     text-align: left;
 }
 
 .cta a {
     color: var(--dark-1);
 }
-
+.company {
+    text-align: center;
+}
 main {
     padding: 20px 3% 100px 3%;
 }

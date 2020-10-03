@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 640px) {
 
     html,
     body {
@@ -38,7 +38,9 @@
         height: auto;
         width: 350px;
     }
-
+    .cta {
+        display: block;
+    }
     /*********************/
     /* Color Scheme Page */
     /*********************/
