@@ -188,7 +188,7 @@
     }
     .show > .accordian-content {
         height: auto;
-        max-height: 600px;
+        max-height: 700px;
         opacity: 1;
         padding: 0 0 200px 0;
     }
@@ -211,6 +211,6 @@
         padding: 5px 3%;
     }
     .hide {
-        height: 5px;
+        height: 15px;
         padding: 0;
     }
