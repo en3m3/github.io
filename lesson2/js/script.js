@@ -5,16 +5,11 @@ toggle.forEach(item => {
             if(item2 === this) {
                 if(this.classList.contains("show")) {
                     this.classList.remove("show"); 
-                    main.style.height = 100 + "px";  
                 } else {
                     this.classList.add("show"); 
-                    let main = document.getElementById("main");
-                    main.style.height = 1500 + "px";
-
                 }
             } else {
                 item2.classList.remove("show");
-                main.style.height = 100 + "px"; 
             }
         });    
     });

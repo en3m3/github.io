@@ -7,6 +7,8 @@
         max-width: 100%;
         font-family: 'Oswald', sans-serif;
         overflow-y: scroll;
+        margin: auto;
+        background-color: #0b191d;        
     }
 
     #main {
@@ -20,13 +22,13 @@
     h1 {
         color: #cfffff;
         margin: 0;
-        padding: 0;
     }
 
     h2 {
         color: #0b191d;
         margin: 0;
         padding: 15px;
+        font-size: 1.23em;
     }
     .page-title {
         padding: 25px 3%;
@@ -48,11 +50,6 @@
         background: #555;
     }
 
-    body {
-        margin: auto;
-        background-color: #0b191d;
-    }
-
     .accordian-content>.text-content {
         color: #fff;
         line-height: 30px;
@@ -60,7 +57,6 @@
     }
 
     .accordian-title {
-        font-size: 16px;
         margin: auto;
         padding: 0;
         width: 100%;
@@ -98,12 +94,21 @@
         text-shadow: 0 0 10px #ffffff;
         color: #fff;
     }
+
     .accordian-content {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 60px 450px auto;
+        grid-template-rows: 60px 450px auto;        
+        overflow: hidden;
+        transition: all 1s;
+        max-height: 0;
+        background-color: #cfffff;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6ffffff', endColorstr='#00ffffff', GradientType=0);
+        opacity: 0;
     }
-
     .accordian-content>a {
         grid-row: 1;
         grid-column: 1;
@@ -176,20 +181,6 @@
         border-radius: 100%;
     }
 
-    .accordian-content {
-        background-color: #cfffff;
-        background-color: #cfffff77;
-        overflow: hidden;
-        transition: all 1s;
-        max-height: 0;
-        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
-        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6ffffff', endColorstr='#00ffffff', GradientType=0);
-        display: grid;
-        opacity: 0;
-    }
-
     .accordian-content img {
         height: auto;
         width: 100%;
@@ -197,7 +188,7 @@
     }
     .show > .accordian-content {
         height: auto;
-        max-height: 1300px;
+        max-height: 600px;
         opacity: 1;
         padding: 0 0 200px 0;
     }
