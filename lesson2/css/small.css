@@ -1,19 +1,103 @@
     html {
-        font-size: 2.8vw;
+        font-size: 13px;
 
     }
 
     body {
         max-width: 100%;
         font-family: 'Oswald', sans-serif;
+        overflow-y: scroll;
     }
 
     #main {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 50px auto 100px 50px auto 100px 50px auto;
+        grid-template-columns: 1fr;
+        position: relative;
+        max-width: 1500px;
+        margin: auto;
     }
 
+    h1 {
+        color: #cfffff;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        color: #0b191d;
+        margin: 0;
+        padding: 15px;
+    }
+    .page-title {
+        padding: 25px 3%;
+    }   
+    .accordian-wrapper ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .accordian-wrapper ::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    .accordian-wrapper ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 30px;
+    }
+
+    .accordian-wrapper ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    body {
+        margin: auto;
+        background-color: #0b191d;
+    }
+
+    .accordian-content>.text-content {
+        color: #fff;
+        line-height: 30px;
+        padding: 15px 3%;
+    }
+
+    .accordian-title {
+        font-size: 16px;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 100px;
+        color: #52863b;
+        text-align: center;
+        position: relative;
+        background: rgb(42, 125, 193);
+        background: linear-gradient(0deg, rgba(42, 125, 193, 1) 0%, rgba(151, 208, 255, 1) 20%, rgba(151, 208, 255, 1) 80%, rgba(42, 125, 193, 1) 100%);
+    }
+
+    .accordian-toggle {
+        min-height: 100px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+
+    .accordian-toggle h2::after {
+        content: '›';
+        position: absolute;
+        font-size: 100px;
+        left: 50%;
+        transform: rotate(90deg);
+        text-shadow: 0 0 3px #ffffff;
+        transition: all 1.5s;
+        color: #000000;     
+    }
+
+    .accordian-toggle:hover > .accordian-title > h2::after {
+        text-shadow: 0 0 10px #ffffff;
+        color: #fff;
+    }
     .accordian-content {
         display: grid;
         grid-template-columns: 100%;
@@ -27,11 +111,7 @@
         align-self: flex-end;
         padding-bottom: 10px;
         color: #ffffff;
-        font-size: 2rem;
-    }
-
-    .accordian-toggle:checked+.accordian-content {
-        padding: 70px 0;
+        font-size: 1.5rem;;
     }
 
     .accordian-content>.text-content {
@@ -96,110 +176,12 @@
         border-radius: 100%;
     }
 
-    h1 {
-        color: #cfffff;
-        margin: 0;
-        padding: 15px;
-    }
-
-    h2 {
-        color: #0b191d;
-        margin: 0;
-        padding: 15px;
-    }
-
-    .accordian-wrapper ::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    .accordian-wrapper ::-webkit-scrollbar-track {
-        background: #ffffff;
-    }
-
-    .accordian-wrapper ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 30px;
-    }
-
-    .accordian-wrapper ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
-
-    body {
-        max-width: 1500px;
-        margin: auto;
-        background-color: #0b191d;
-    }
-
-    .accordian-content>.text-content {
-        font-size: 20px;
-        color: #fff;
-        line-height: 30px;
-        padding: 15px 3%;
-    }
-
-    .accordian-title {
-        font-size: 1.5rem;
-        margin: auto;
-        padding: 0;
-        width: 100%;
-        color: #52863b;
-        text-align: center;
-        position: relative;
-        background: rgb(42, 125, 193);
-        background: linear-gradient(0deg, rgba(42, 125, 193, 1) 0%, rgba(151, 208, 255, 1) 20%, rgba(151, 208, 255, 1) 80%, rgba(42, 125, 193, 1) 100%);
-    }
-
-    .accordian-toggle {
-        min-height: 40px;
-        display: block;
-        margin: auto;
-        visibility: hidden;
-        width: 100%;
-        height: 50px;
-        margin: 0;
-        padding: 0;
-        position: relative;
-    }
-
-    .accordian-toggle::before {
-        content: ' ';
-        position: relative;
-        width: 100%;
-        top: 0px;
-        height: 50px;
-        display: block;
-        visibility: visible;
-        background-color: #93d277;
-        background: rgb(128, 167, 199);
-        background: linear-gradient(0deg, rgba(128, 167, 199, 1) 0%, rgba(143, 157, 168, 1) 20%, rgba(100, 126, 148, 1) 100%);
-    }
-
-    .accordian-toggle::after {
-        content: '›';
-        position: absolute;
-        font-size: 100px;
-        transform: rotate(90deg);
-        top: -35px;
-        left: 50%;
-        visibility: visible;
-        text-shadow: 0 0 3px #ffffff;
-        transition: all 1.5s;
-        color: #000000;
-    }
-
-    .accordian-toggle:hover::after {
-        text-shadow: 0 0 10px #ffffff;
-        color: #fff;
-    }
-
     .accordian-content {
         background-color: #cfffff;
         background-color: #cfffff77;
         overflow: hidden;
         transition: all 1s;
         max-height: 0;
-        padding: 0 10vw;
         background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
         background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%);
@@ -213,64 +195,31 @@
         width: 100%;
         transition: all 2.5s ease-in-out;
     }
-
-
-    .accordian-toggle:checked+.accordian-content {
+    .show > .accordian-content {
         height: auto;
-        padding: 10px 0 70px 0;
         max-height: 1300px;
         opacity: 1;
+        padding: 0 0 200px 0;
     }
 
-    .accordian-toggle:checked::after {
+    .show > .accordian-toggle > .accordian-title > h2::after {
         transform: rotate(-90deg);
         left: calc(50% - 20px);
     }
-
-    /* principle one */
-    #main>div:nth-child(1) {
-        grid-column: 1;
-        grid-row: 1;
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color: #97d0ff;
+        width: 100%;
+        z-index: 1;
+        padding: 0;
+        height: 80px;
+        transition: all 2s;
+    }   
+    .footer-wrapper {
+        padding: 5px 3%;
     }
-
-    #main>input:nth-child(2) {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    #main>div:nth-child(3) {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    /* principle two */
-    #main>div:nth-child(4) {
-        grid-column: 1;
-        grid-row: 4;
-    }
-
-    #main>input:nth-child(5) {
-        grid-column: 1;
-        grid-row: 5;
-    }
-
-    #main>div:nth-child(6) {
-        grid-column: 1;
-        grid-row: 6;
-    }
-
-    /* principle three */
-    #main>div:nth-child(7) {
-        grid-column: 1;
-        grid-row: 7;
-    }
-
-    #main>input:nth-child(8) {
-        grid-column: 1;
-        grid-row: 8;
-    }
-
-    #main>div:nth-child(9) {
-        grid-column: 1;
-        grid-row: 9;
+    .hide {
+        height: 5px;
+        padding: 0;
     }
