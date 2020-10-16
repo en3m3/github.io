@@ -48,7 +48,7 @@
     }
 
     .scenarios {
-        grid-column: 1/end;
+        grid-column: 1/3;
     }
 
     /************************/
