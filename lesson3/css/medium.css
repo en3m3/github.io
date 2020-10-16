@@ -7,7 +7,6 @@
     }
 
     nav li {
-        display: flex;
         align-items: flex-end;
     }
 
@@ -33,9 +32,6 @@
     }
 
     #logo img {
-        max-height: 100%;
-        border-style: none;
-        height: auto;
         width: 350px;
     }
     .cta {
@@ -46,6 +42,9 @@
     /*********************/
     .color-grid {
         grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    }
+    .color-grid > div:last-of-type {
+        grid-column: 2;
     }
 
     .scenarios {

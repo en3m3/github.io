@@ -22,12 +22,12 @@ body {
     max-width: 100%;
     font-size: 14px;
     color: var(--dark-1);
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     letter-spacing: 0px;
     margin: 0;
     min-height: 100vh;
-    grid-template: auto 5fr 1fr / 1fr;
+    grid-template: auto 12fr 1fr / 1fr;
     display: grid;
 }
 
@@ -40,31 +40,28 @@ header {
     border-bottom: var(--dark-border);
 }
 
-h1,
-h2,
-h3,
-h4 {
-    margin: .25rem 0;
-}
-
 h1 {
-    font-size: 2.9rem;
-    font-family: 'roboto_slabregular';
+    font-size: 2.7rem;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.05rem;
+    margin: .25rem 0;
 }
 
 h2 {
     font-size: 2rem;
-    font-family: 'roboto_slabregular';
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.025rem;
+    margin: .25rem 0;
 }
 
 h3 {
     font-size: 1.5rem;
+    margin: .25rem 0;
 }
 
 h4 {
     font-size: 1.2rem;
+    margin: .25rem 0;
 }
 
 p {
@@ -88,21 +85,23 @@ small {
 }
 
 a {
-    color: var(--light-2);
+    color: var(--accent-1);
     text-decoration: none;
     text-decoration-color: rgba(112, 169, 161, 1);
     letter-spacing: -0.025rem;
 }
 
+footer a {
+    color: var(--light-1);
+}
+
 a:hover {
-    text-decoration-style: dashed;
-    font-weight: 900;
-    letter-spacing: -0.025em;
+    text-decoration: underline;
 }
 
 ul,
 ol {
-    font-family: 'roboto_slabregular';
+    font-family: 'Rubik', sans-serif;
     list-style-position: inside;
 }
 
@@ -139,7 +138,8 @@ div {
     text-align: center;
 }
 main {
-    padding: 20px 3% 100px 3%;
+    padding: 20px 3% 50px 3%;
+    min-height: 50vh;
 }
 
 footer {
@@ -147,7 +147,7 @@ footer {
     color: #fff;
     border-top: var(--dark-border);
     text-align: center;
-    padding: 50px 3% 0 3%;
+    padding: 30px 3%;
 }
 
 /*********************/
@@ -212,7 +212,6 @@ nav a:visited {
 #logo img {
     max-height: 100%;
     border-style: none;
-    height: auto;
     width: 250px;
 }
 
@@ -240,7 +239,7 @@ nav a:visited {
 }
 
 .dark2-bg {
-    background-color: var(--dark-1);
+    background-color: var(--dark-2);
     color: #fff;
 }
 
@@ -259,8 +258,6 @@ nav a:visited {
 /* Target Audience Page */
 /************************/
 #target-audience>section {
-    background-color: var(--light-1);
-    color: var(--dark-1);
     padding: 1% 3%;
     border-radius: 15px;
     margin: 15px;
@@ -272,18 +269,16 @@ nav a:visited {
 /*********************/
 .color-grid {
     display: grid;
-    grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+    grid-template: repeat(6, 1fr) / repeat(1, 1fr);
     grid-gap: 1%;
 }
 
 .color-column {
     min-height: 100px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     border-radius: 15px;
+    text-align: center;
 }
 
 .cell-1 {

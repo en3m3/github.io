@@ -5,8 +5,10 @@
         font-size: 18px;
     }
 
-    nav ul {
-        
+    body {
+        max-width: 1500px;
+        display: block;
+        margin: 0 auto;
     }
 
     nav ul {
@@ -16,21 +18,28 @@
         text-align: center;
         height: auto;
         padding: 0px 40px;
-    }    
+    }
+
     nav>ul>li a {
         opacity: 1;
         letter-spacing: -0.025em;
     }
+
     nav>ul>li a:hover {
         text-align: center;
         letter-spacing: -0.025em;
     }
 
+
     /*********************/
     /* Color Scheme Page */
     /*********************/
     .color-grid {
-        grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+        grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    }
+
+    .color-grid>div:last-of-type {
+        grid-column: 5;
     }
 
 
