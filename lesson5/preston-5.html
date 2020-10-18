@@ -18,12 +18,12 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="preston">
 <!-- <body id="debug"> -->
     <header>
         <div class="top-bar">
             
-            <img id="logo" class="hide-medium-down" src="images/logo_white.png" alt="Sherman Peak Weather Station Logo">
+            <img id="logo" src="images/logo_white.png" alt="Sherman Peak Weather Station Logo">
             
             <h1 class="site-title">Sherman Peak Weather Station</h1>
             <div class="cta">
@@ -51,36 +51,173 @@
     </header>
 
     <main>
-        <img id="logo-body" class="hide-medium-up" src="images/logo.png" alt="Sherman Peak Weather Station Logo">
         <h2>Preston Idaho</h2> 
+        <div id="friday-notice" class="hide">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+
         <div class="hero-box">
             <picture>
                 <source media="(min-width:400px)" srcset="images/preston.jpg">
-                <img src="images/prestonsm.jpg" alt="preston" style="width:auto;">
+                <img src="images/prestonsm.jpg" alt="preston">
              </picture>  
              <div class="weather-summary">
                 <h3>Weather Summary</h3>
-            </div>                       
-        </div>
-
-        <div class="five-day">
-            <h3>Five Day Forecast</h3>
-            <div>
-                <h4>Article Title</h4>
-                <p>article content here</p>
-                article image
+                <div class="carousel-wrapper">
+                    <div class="carousel active">
+                            <img src="images/partial.png" alt="partly cloudy" />
+                            <h4>Morning</h4>
+                            <p>Parly Cloudy</p>
+                            <hr>
+                            <div class="bottom-section">
+                                <div class="prev">◀</div>
+                                <div>
+                                    <p>Temp: 64&deg;</p>
+                                    <p>Barometric Pressure: 30.25 inHg</p>
+                                    <p>Humidity: 40%</p>
+                                </div>
+                                <div class="next">▶</div>
+                            </div>
+                    </div>
+                    <div class="carousel">
+                            <img src="images/partial.png" alt="partly cloudy" />
+                            <h4>Afternoon</h4>
+                            <p>Cloudy</p>
+                            <hr>
+                            <div class="bottom-section">
+                                <div class="prev">◀</div>
+                                <div>
+                                    <p>Temp: 74&deg;</p>
+                                    <p>Barometric Pressure: 26.25 inHg</p>
+                                    <p>Humidity: 44%</p>
+                                </div>
+                                <div class="next">▶</div>
+                            </div>
+                    </div>
+                    <div class="carousel">
+                            <img src="images/drizzle.png" alt="Drizzle" />
+                            <h4>Evening</h4>
+                            <p>Drizzley</p>
+                            <hr>
+                            <div class="bottom-section">
+                                <div class="prev">◀</div>
+                                <div>
+                                    <p>Temp: 59&deg;</p>
+                                    <p>Barometric Pressure: 38. 5 inHg</p>
+                                    <p>Humidity: 100%</p>
+                                </div>
+                                <div class="next">▶</div>
+                            </div>
+                    </div>                                                
+                </div>
+             </div>
+        </div>   
+        <div class="detailed-weather">
+            <div class="five-day">
+                <h3>Five Day Forecast</h3>
+                <div class="five-forecast">
+                    <div class="forcast-day">
+                        <p><img src="images/rain.png" alt="rain"><span class="day-of-week">Mon</span></p>
+                        <hr>                            
+                        <div class="five-content">
+                            <p><strong>Rain</strong></p>                        
+                            <p>High <span>58&deg;</span></p>
+                            <p>Low  <span>50&deg;</span></p>                    
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>100%</span></p>
+                            <p>A little wet</p>
+                        </div>
+                    </div>
+                    <div class="forcast-day">
+                        <p><img src="images/partial.png" alt="Partly Cloudy"><span class="day-of-week">Tue</span></p>
+                        <hr>                            
+                        <div class="five-content">
+                            <p><strong>Partly Cloudy</strong></p>
+                            <p>High <span>64&deg;</span></p>
+                            <p>Low <span>58&deg;</span></p>
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>52%</span></p>
+                            <p>Where did the sun go?</p>
+                        </div>
+                    </div>
+                    <div class="forcast-day">
+                        <p><img src="images/sunny.png" alt="sunny"><span class="day-of-week">Wed</span></p>
+                        <hr>                            
+                        <div class="five-content">
+                            <p><strong>Sunny</strong></p>                        
+                            <p>High <span>72&deg;</span></p>
+                            <p>Low <span>64&deg;</span></p>
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>48%</span></p>
+                            <p>Hot Hot Hot</p>
+                        </div>
+                    </div>                    
+                    <div class="forcast-day">
+                        <p><img src="images/drizzle.png" alt="drizzle"><span class="day-of-week">Thu</span></p>
+                        <hr>                    
+                        <div class="five-content">
+                            <strong>Drizzle</strong>
+                            <p>High <span>64&deg;</span></p>
+                            <p>Low <span>58&deg;</span></p>                        
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>98%</span></p>
+                            <p>Almost misty</p>
+                        </div>
+                    </div>
+                    <div class="forcast-day">
+                        <p><img src="images/rain.png" alt="rain"><span class="day-of-week">Fri</span></p>
+                        <hr>                 
+                        <div class="five-content">
+                            <p><strong>Rain</strong></p>
+                            <p>High <span>60&deg;</span></p>
+                            <p>Low <span>55&deg;</span></p>                        
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>100%</span></p>
+                            <p>More rain?</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>        
+        <article>
+            <h4>Holiday Craft Fair</h4>
+            <div class="article-content">
+                <picture>
+                    <source media="(min-width:800px)" srcset="images/winterfair.jpg">
+                    <img src="images/winterfairsm.jpg" alt="Winter Craft Fair" class="article-image">
+                 </picture>                  
+                <p>The Holiday craft fair is coming this November. Get started with your holiday shopping
+                    browsing the unique hand made or rare crafts. 
+                </p>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d133666.5814480094!2d-111.44980836243145!3d42.24345927218467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d3010f5785ac600!2sThe%20National%20Oregon%2FCalifornia%20Trail%20Center!5e0!3m2!1sen!2sus!4v1602973477339!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+            </div>
+        </article>
+    </div>        
+
     </main>
     <footer>
-        <h3>Contact Information</h3>
-        <div class="email">email@mail.com</div>
-        <div class="phone">805-555-5555</div>
-        <div class="map">map here</div>
-        <p>&copy;<span id="year"></span> | Erik Moffett | Utah | <a
+        <div class="fifty-percent">
+            <div class="footer-cta">
+                <h3>Contact Information</h3>
+                <p><a class="address"
+                    href="https://goo.gl/maps/YfqXwAWgVLEMBX2X6"
+                    target="_blank"></p>
+                    <p>8 Mile Creek Rd Soda Springs, ID 83276</p></a>
+                <p><a class="phone" href="tel:888-555-5555">888-555-5555</a></p>
+                <p><a href="sms: weatherstation@shermanpeakweather.com" class="email">weatherstation@shermanpeakweather.com</a></p>                
+                    <ul class="social-media">
+                        <li><a href="facebook.com" target="_blank"><img src="images/facebook.jpg"alt="Facebook"></a></li>
+                        <li><a href="twitter.com" target="_blank"><img src="images/twitter.jpg"alt="Twitter"></a></li>
+                        <li><a href="instagram.com" target="_blank"><img src="images/instagram.jpg"alt="Instagram"></a></li>
+                    </ul>
+                </a>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23546.972424588883!2d-111.5642492!3d42.4623858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755b7424f8fc739%3A0xf6d7885d67173689!2sSherman%20Peak!5e0!3m2!1sen!2sus!4v1602975051866!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <p><span id="modified"></span> &copy; | Erik Moffett | Utah | <a
                 href="https://www.byui.edu/online" target="_blank">BYUI
                 Online Learning</a></p>
-        <p id="modified"></p>
     </footer>
     <script src="js/script.js"></script>
 </body>
