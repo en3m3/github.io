@@ -331,6 +331,7 @@ footer .social-media > li > a > img {
 }
 footer .social-media > li:hover > a > img {
     border-radius: 0;
+    box-shadow: 0 0 10px 0 #fff;
 }
 
 footer .social-media > li:first-of-type {
@@ -339,6 +340,7 @@ footer .social-media > li:first-of-type {
 
 .footer-cta > p > a {
     position: relative;
+    margin-left: 20px;
 }
 
 .footer-cta > p > a::before {
@@ -350,6 +352,12 @@ footer .social-media > li:first-of-type {
     left: -40px;
 }
 
+
+
+footer .address {
+    display: none;
+}
+
 footer .address::before {
     background-image: url(../images/pin.png);
     top: -12px;
@@ -357,12 +365,12 @@ footer .address::before {
 
 footer .phone::before {
     background-image: url(../images/phone.png);
-    top: -5px;
+    top: -6px;
 }
 
 footer .email::before {
     background-image: url(../images/email.png);
-    top: -5px;
+    top: -3px;
 }
 
 #logo-body {

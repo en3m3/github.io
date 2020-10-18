@@ -82,7 +82,7 @@
     }
 
     .preston article {
-        min-height: 700px;
+        min-height: 500px;
         padding: 25px;
 
     }
@@ -108,4 +108,10 @@
         width: 50%;
         padding: 25px;
     }
+    footer .address {
+        display: block;
+    }    
+    .footer-cta > p > a {
+        margin-left: 0;
+    }    
 }
