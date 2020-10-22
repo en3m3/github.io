@@ -1,4 +1,4 @@
-@media only screen and (min-width: 890px) {
+@media only screen and (min-width: 1025px) {
 
     html,
     body {
@@ -46,9 +46,10 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
+        display: flex;
     }
 
-    #logo {
+    #logo img {
         max-height: 100%;
         border-style: none;
         height: auto;
@@ -56,15 +57,61 @@
     }
 
     #logo {
-        width: 32%;
+        width: 33%;
     }
 
     .site-title {
-        width: 32%;
+        width: 33%;
     }
 
     .cta {
         display: block;
     }
 
+    .weather-summary {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        height: 250px;
+        width: auto;
+        border-radius: 15px;
+    }
+
+    .five-forecast {
+        grid-template: 1fr / repeat(5, 1fr);
+    }
+
+    .preston article {
+        min-height: 500px;
+        padding: 25px;
+
+    }
+
+    .preston article img {
+        float: right;
+    }
+
+    .preston article .article-content {
+        display: block;
+    }
+
+    .preston article iframe {
+        display: block;
+    }
+
+    .fifty-percent {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .fifty-percent > div {
+        width: 50%;
+        padding: 25px;
+    }
+    footer .address {
+        display: block;
+    }    
+    .footer-cta > p > a {
+        margin-left: 0;
+    }    
 }
