@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 800px) {
 
     html,
     body {
@@ -72,9 +72,17 @@
         position: absolute;
         top: 20px;
         left: 30px;
-        height: 250px;
+        min-height: 300px;
+        height: auto;
         width: auto;
         border-radius: 15px;
+        min-width: 350px;
+        background-color: rgba(207, 215, 199,0.85);
+        color: var(--light-1);        
+    }
+
+    .weather-summary > h3 {
+        border-color: #fffdf0;
     }
 
     .five-forecast {

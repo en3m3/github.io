@@ -146,13 +146,30 @@ div {
 
 .weather-summary {
     position: relative;
-    background-color: var(--light-1);
+    background-color: rgba(207, 215, 199,0.85);
     height: auto;
+    color: var(--dark-1);
     width: 100%;
     padding: 20px;
     border: 3px solid #46786e;
     box-shadow: 0px 3px 9px 3px #000;
     border-radius: 5px;
+}
+
+.weather-summary > h3 {
+    padding-bottom: 5px;
+    border-bottom: 5px double #000;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.weather-summary ul {
+    list-style: none;
+    line-height: 38px;
+    font-size: 1.2rem;
+    padding: 15px 0 15px 15px;
+    width: 100%;
+    margin: auto;
 }
 
 .hero-box {
