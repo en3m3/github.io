@@ -1,4 +1,4 @@
-@media only screen and (min-width: 890px) {
+@media only screen and (min-width: 900px) {
 
     html,
     body {
@@ -7,7 +7,7 @@
     }
 
     #mobile-toggle {
-        display: none;
+        visibility: hidden;
     }
 
     nav {
@@ -41,30 +41,70 @@
     }
 
     .top-bar {
-        height: 160px;
         flex-direction: row;
-        align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     #logo {
-        max-height: 100%;
-        border-style: none;
-        height: auto;
-        width: 350px;
+        height: 130px;
     }
 
-    #logo {
-        width: 32%;
-    }
-
-    .site-title {
-        width: 32%;
+    .top-heading-container {
+        margin-left: 15%;
     }
 
     .cta {
         display: block;
+    }
+
+    .five-forecast {
+        grid-template: 1fr / repeat(5, 1fr);
+    }
+
+    .weather-summary {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        min-height: 300px;
+        height: auto;
+        width: auto;
+        border-radius: 15px;
+        min-width: 350px;
+        background-color: rgba(207, 215, 199, 0.85);
+        color: var(--light-1);
+    }
+
+    .weather-summary>h3 {
+        border-color: var(--light-1);
+    }
+
+    .preston article {
+        min-height: 500px;
+        padding: 25px;
+    }
+
+    .preston article img {
+        float: right;
+    }
+
+    .preston article .article-content {
+        display: block;
+    }
+
+    .preston article iframe {
+        display: block;
+    }
+
+    .article-content>picture {
+        float: right;
+
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 
 }

@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function(){
 WebFont.load({
     google: {
       families: [
-         'Raleway',
-         'Roboto+Slab',
+         'Rubik',
+         'Montserrat',
       ]
     }
   });  

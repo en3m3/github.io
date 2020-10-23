@@ -36,14 +36,14 @@ img {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 0.05rem;
     margin: .25rem 0;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-family: 'Rubik', sans-serif;
     letter-spacing: 0.025rem;
     margin: .25rem 0;
@@ -233,10 +233,6 @@ main > h2 {
 .forcast-day>p>.day-of-week {
     position: relative;
     top: -20px;
-}
-
-.bottom-section p {
-    font-weight: 600;
 }
 
 #friday-notice {

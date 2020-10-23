@@ -56,12 +56,8 @@
         width: 350px;
     }
 
-    #logo {
-        width: 33%;
-    }
-
     .site-title {
-        width: 33%;
+        width: auto;
     }
 
     .cta {
@@ -92,7 +88,6 @@
     .preston article {
         min-height: 500px;
         padding: 25px;
-
     }
 
     .preston article img {

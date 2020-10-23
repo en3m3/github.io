@@ -2,7 +2,7 @@
     --dark-1: rgba(11, 32, 39, 1);
     --dark-2: rgb(53, 100, 116);
     --accent-1: rgb(70 120 110 / 1);
-    --light-1: rgb(255 253 240);
+    --light-1: rgb(255 255 255);
     --light-2: rgba(207, 215, 199, 1);
     --dark-border: 10px double rgba(11, 32, 39, 1);
     --white-gradient: linear-gradient(120deg, #fdfbfb 0%, #cfd7c7 100%);
@@ -34,38 +34,33 @@ img {
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    width: 100%;
 }
-
-h1,
-h2,
-h3,
-h4 {
+h1 {
+    font-size: 2em;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 0.05rem;
     margin: .25rem 0;
 }
 
-h1 {
-    font-size: 1.9rem;
-    font-family: 'roboto_slabregular';
-    letter-spacing: 0.05rem;
-}
-
 h2 {
-    font-size: 2rem;
-    font-family: 'roboto_slabregular';
+    font-size: 1.75em;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.025rem;
+    margin: .25rem 0;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    margin: .25rem 0;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+    margin: .25rem 0;
 }
 
 p {
-    margin: .5rem 0;
+    margin: .5em 0;
 }
 
 strong {
@@ -85,21 +80,23 @@ small {
 }
 
 a {
-    color: var(--light-2);
+    color: var(--accent-1);
     text-decoration: none;
     text-decoration-color: rgba(112, 169, 161, 1);
     letter-spacing: -0.025rem;
 }
 
+footer a {
+    color: var(--light-1);
+}
+
 a:hover {
-    text-decoration-style: dashed;
-    font-weight: 900;
-    letter-spacing: -0.025em;
+    text-decoration: underline;
 }
 
 ul,
 ol {
-    font-family: 'roboto_slabregular';
+    font-family: 'Rubik', sans-serif;
     list-style-position: inside;
 }
 
@@ -120,7 +117,9 @@ div {
     text-align: center;
     color: #fff;
     position: relative;
-    padding: 15px;
+    padding: 15px 5px;
+    height: auto;   
+    font-size: 10px; 
 }
 
 .cta {
@@ -133,15 +132,8 @@ div {
     color: var(--light-1);
 }
 
-#logo {
-    align-self: center;
-    width: 100%;
-}
-
 .site-title {
     align-self: center;
-    width: 100%;
-    font-size: 1.6rem;
 }
 
 footer {
@@ -203,7 +195,7 @@ nav ul li {
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    right: 10px;
+    margin: 0 0 0 auto;
 }
 
 nav>ul>li a {
@@ -250,11 +242,16 @@ nav a:visited {
 #logo {
     max-height: 100%;
     border-style: none;
-    height: auto;
-    width: 250px;
-    filter: brightness(5);
+    box-sizing: border-box;
+    padding: 5px;
+    align-self: center;
+    height: 80px;
+    width: auto; 
 }
 
+.top-heading-container{
+    margin-left: 5%;
+}
 /************************/
 /* Color Classes        */
 /************************/
@@ -293,92 +290,85 @@ nav a:visited {
     background-image: var(--white-gradient);
     color: var(--dark-1);
 }
-
-/************************/
-/* Target Audience Page */
-/************************/
-#target-audience>section {
-    background-color: var(--light-1);
-    color: var(--dark-1);
-    padding: 1% 3%;
-    border-radius: 15px;
-    margin: 15px;
-    box-shadow: 0 3px 0px 4px #555;
+/* Preston */
+.hero-box {
+    position: relative;
 }
-
-/*********************/
-/* Color Scheme Page */
-/*********************/
-.color-grid {
-    display: grid;
-    grid-template: repeat(6, 1fr) / repeat(2, 1fr);
-    grid-gap: 1%;
-}
-
-.color-column {
-    min-height: 100px;
+.hero-box > img {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    border-radius: 15px;
 }
 
-.cell-1 {
-    background-color: var(--dark-1);
+.detailed-weather {
+    border: 5px double rgb(53, 100, 116);
+    border-radius: 20px;
+    margin: 15px 5px;
 }
 
-.cell-2 {
-    background-color: var(--dark-2);
+.five-day h3 {
+    padding: 15px;
+    margin: 0;
 }
 
-.cell-3 {
-    background-color: var(--accent-1);
+.five-forecast {
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr;
 }
 
-.cell-4 {
-    background-color: var(--light-1);
+.forcast-day {
+    background-color: rgba(53, 100, 116, .75);
+    margin: 15px 5px;
+    padding: 0 25px 25px;
+    border: 3px solid #0b2027;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 15px;
+    position: relative;
 }
 
-.cell-5 {
-    background-color: var(--light-2);
+.forcast-day>p>img {
+    width: 50px;
+    display: block;
 }
 
-.cell-7 {
-    background-color: var(--dark-1);
-    color: var(--light-1);
+.forcast-day:nth-child(even) {
+    background-color: rgba(11, 32, 39, .75);
+    border: 3px solid #0b2027;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 15px;
 }
 
-.cell-8 {
-    background-color: var(--dark-2);
-    color: #ffffff;
+.forcast-day>p>span {
+    float: right;
 }
 
-.cell-9 {
-    background-color: var(--accent-1);
-    color: #ffffff;
+.forcast-day>p>.day-of-week {
+    position: relative;
+    top: -20px;
 }
 
-.cell-10 {
-    background-color: var(--light-1);
+.weather-summary {
+    position: relative;
+    background-color: rgba(207, 215, 199,0.85);
+    height: auto;
     color: var(--dark-1);
+    width: 100%;
+    padding: 20px;
+    border: 3px solid #46786e;
+    box-shadow: 0px 3px 9px 3px #000;
+    border-radius: 5px;
 }
 
-.cell-11 {
-    background-color: var(--light-2);
-    color: var(--dark-1);
+.weather-summary > h3 {
+    padding-bottom: 5px;
+    border-bottom: 5px double #000;
+    border-radius: 100px;
+    text-align: center;
 }
 
-.cell-12 {
-    background-color: var(--accent-1);
-    color: #ffffff;
+.weather-summary ul {
+    list-style: none;
+    line-height: 38px;
+    font-size: 1.2rem;
+    padding: 15px 0 15px 15px;
+    width: 100%;
+    margin: auto;
 }
-
-/*
---dark-1: rgba(11, 32, 39, 1);
---dark-2: rgba(64, 121, 140, 1);
---accent-1: rgba(112, 169, 161, 1);
---light-1: rgba(246, 241, 209, 1); 
---light-2: rgba(207, 215, 199, 1);
-*/
