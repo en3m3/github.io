@@ -144,6 +144,12 @@ div {
     font-size: 1.6rem;
 }
 
+main > h2 {
+    padding: 15px;
+    border-bottom: 5px double #000;
+    border-radius: 20px;
+}
+
 .weather-summary {
     position: relative;
     background-color: rgba(207, 215, 199,0.85);
