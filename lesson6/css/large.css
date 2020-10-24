@@ -15,4 +15,9 @@
     nav>ul>li a:hover {
         letter-spacing: -0.025em;
     }    
+
+    .top-heading-container {
+        font-size: 22px;
+        padding-right: 100px;
+    }    
 }

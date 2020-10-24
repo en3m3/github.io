@@ -60,7 +60,7 @@ h4 {
 }
 
 p {
-    margin: .5em 0;
+    margin: .5rem 0;
 }
 
 strong {
@@ -122,14 +122,18 @@ div {
     font-size: 10px; 
 }
 
-.cta {
-    display: none;
-    width: 31%;
-    text-align: right;
+#logo {
+    max-height: 100%;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 5px;
+    align-self: center;
+    height: 80px;
+    width: auto; 
 }
 
-.cta a {
-    color: var(--light-1);
+.top-heading-container{
+    margin-left: 5%;
 }
 
 .site-title {
@@ -187,15 +191,15 @@ nav ul li {
     font-size: 32px;
     color: #fff;
     text-align: right;
-    height: auto;
     max-height: 100px;
     background-color: transparent;
     opacity: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: 100px;
     position: relative;
-    margin: 0 0 0 auto;
+    right: 10px;
 }
 
 nav>ul>li a {
@@ -239,19 +243,6 @@ nav a:visited {
     color: var(--light-1);
 }
 
-#logo {
-    max-height: 100%;
-    border-style: none;
-    box-sizing: border-box;
-    padding: 5px;
-    align-self: center;
-    height: 80px;
-    width: auto; 
-}
-
-.top-heading-container{
-    margin-left: 5%;
-}
 /************************/
 /* Color Classes        */
 /************************/
@@ -371,4 +362,8 @@ nav a:visited {
     padding: 15px 0 15px 15px;
     width: 100%;
     margin: auto;
+}
+
+article {
+    margin: 0 15px;
 }

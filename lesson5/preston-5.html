@@ -20,36 +20,27 @@
 </head>
 
 <body class="preston">
-    <!-- <body id="debug"> -->
     <header>
         <div class="top-bar">
-            <img id="logo" src="images/logo_white.png"
-                alt="Sherman Peak Weather Station Logo">
-
-            <h1 class="site-title">Sherman Peak Weather Station</h1>
-            <div class="cta">
-                <a class="phone" href="tel:888-888-8888">888-888-8888</a>
-                <a class="address"
-                    href="https://goo.gl/maps/YfqXwAWgVLEMBX2X6"
-                    target="_blank">
-                    <p>8 Mile Creek Rd</p>
-                    <p>Soda Springs, ID 83276</p>
-
-                </a>
+            <img src="images/logo_white.png"
+                alt="Sherman Peak Weather Station Logo" id="logo">
+            <div class="top-heading-container">
+                <h1 class="site-title">Sherman Peak Weather Station</h1>
+                <h2 class="slogan">Let's explore together</h2>
             </div>
-            <nav>
-                <ul>
-                    <li id="mobile-toggle">&#9776;</li>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="preston-5.html">Preston</a>
-                    </li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-            </nav>
+            <div id="mobile-toggle">&#9776;</div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston-5.html">Preston</a>
+                </li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -64,58 +55,16 @@
                 <source media="(min-width:400px)"
                     srcset="images/preston.jpg">
                 <img src="images/prestonsm.jpg" alt="preston">
-            </picture>
+            </picture>                
             <div class="weather-summary">
                 <h3>Weather Summary</h3>
-                <div class="carousel-wrapper">
-                    <div class="carousel active">
-                        <img src="images/partial.png"
-                            alt="partly cloudy" />
-                        <h4>Morning</h4>
-                        <p>Parly Cloudy</p>
-                        <hr>
-                        <div class="bottom-section">
-                            <div class="prev">◀</div>
-                            <div>
-                                <p>Temp: 64&deg;</p>
-                                <p>Barometric Pressure: 30.25 inHg</p>
-                                <p>Humidity: 40%</p>
-                            </div>
-                            <div class="next">▶</div>
-                        </div>
-                    </div>
-                    <div class="carousel">
-                        <img src="images/partial.png"
-                            alt="partly cloudy" />
-                        <h4>Afternoon</h4>
-                        <p>Cloudy</p>
-                        <hr>
-                        <div class="bottom-section">
-                            <div class="prev">◀</div>
-                            <div>
-                                <p>Temp: 74&deg;</p>
-                                <p>Barometric Pressure: 26.25 inHg</p>
-                                <p>Humidity: 44%</p>
-                            </div>
-                            <div class="next">▶</div>
-                        </div>
-                    </div>
-                    <div class="carousel">
-                        <img src="images/drizzle.png" alt="Drizzle" />
-                        <h4>Evening</h4>
-                        <p>Drizzley</p>
-                        <hr>
-                        <div class="bottom-section">
-                            <div class="prev">◀</div>
-                            <div>
-                                <p>Temp: 59&deg;</p>
-                                <p>Barometric Pressure: 38. 5 inHg</p>
-                                <p>Humidity: 100%</p>
-                            </div>
-                            <div class="next">▶</div>
-                        </div>
-                    </div>
-                </div>
+                <ul>
+                    <li>Currently: <span id="current">Rainy</span></li>
+                    <li>Temp: <span id="temp">49</span>&degF</li>
+                    <li>Wind Chill: <span id="wind-chill"></span></li>
+                    <li>Humidity: <span id="humidity">93</span>%</li>
+                    <li>Wind Speed: <span id="wind-speed">88</span> mph</li>
+                </ul>
             </div>
         </section>
         <section class="detailed-weather">

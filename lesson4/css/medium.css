@@ -52,14 +52,7 @@
 
     .top-heading-container {
         margin-left: 15%;
-    }
-
-    .cta {
-        display: block;
-    }
-
-    .five-forecast {
-        grid-template: 1fr / repeat(5, 1fr);
+        font-size: 16px;
     }
 
     .weather-summary {
@@ -77,6 +70,10 @@
 
     .weather-summary>h3 {
         border-color: var(--light-1);
+    }
+    
+    .five-forecast {
+        grid-template: 1fr / repeat(5, 1fr);
     }
 
     .preston article {
