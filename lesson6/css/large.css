@@ -1,8 +1,11 @@
 @media only screen and (min-width: 1230px) {
     html, body {
         font-size: 18px;
+    }
+
+    main {
         max-width: 1300px;
-        margin: auto;
+        margin: auto;        
     }
     nav ul {
         padding: 0px 100px;

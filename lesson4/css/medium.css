@@ -3,7 +3,6 @@
     html,
     body {
         font-size: 16px;
-        grid-template: 220px 3fr 1fr / 1fr;
     }
 
     #mobile-toggle {
@@ -59,13 +58,17 @@
         position: absolute;
         top: 20px;
         left: 30px;
-        min-height: 300px;
+        min-height: 240px;
         height: auto;
         width: auto;
         border-radius: 15px;
         min-width: 350px;
         background-color: rgba(207, 215, 199, 0.85);
         color: var(--light-1);
+    }
+
+    .weather-summary ul {
+        line-height: 28px;
     }
 
     .weather-summary>h3 {
