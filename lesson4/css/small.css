@@ -242,45 +242,6 @@ nav a,
 nav a:visited {
     color: var(--light-1);
 }
-
-/************************/
-/* Color Classes        */
-/************************/
-.light1-bg {
-    background-color: var(--light-1);
-    color: var(--dark-1);
-}
-
-.light2-bg {
-    background-color: var(--light-2);
-    color: var(--dark-1);
-}
-
-.accent1-bg {
-    background-color: var(--accent-1);
-    color: #fff;
-}
-
-.dark1-bg {
-    background-color: var(--dark-1);
-    color: #fff;
-}
-
-.dark2-bg {
-    background-color: var(--dark-1);
-    color: #fff;
-}
-
-.white-bg {
-    background-color: #fff;
-    color: var(--dark-1);
-}
-
-.light-gradient-bg {
-    background-color: #eee;
-    background-image: var(--white-gradient);
-    color: var(--dark-1);
-}
 /* Preston */
 .hero-box {
     position: relative;
