@@ -98,16 +98,20 @@
         flex-direction: row-reverse;
         justify-content: space-around;
     }
-    .fifty-percent > div {
+
+    .fifty-percent>div {
         width: 50%;
         padding: 25px;
     }
+
     footer .address {
         display: block;
-    }    
-    .footer-cta > p > a {
+    }
+
+    .footer-cta>p>a {
         margin-left: 0;
-    }    
+    }
+
     .article-content>picture {
         float: right;
 

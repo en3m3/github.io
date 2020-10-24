@@ -144,7 +144,7 @@ div {
     padding: 5px;
     align-self: center;
     height: 80px;
-    width: auto; 
+    width: auto;
 }
 
 .site-title {
@@ -153,7 +153,7 @@ div {
     font-size: 1.6em;
 }
 
-main > h2 {
+main>h2 {
     padding: 15px;
     border-bottom: 5px double #000;
     border-radius: 20px;
@@ -161,7 +161,7 @@ main > h2 {
 
 .weather-summary {
     position: relative;
-    background-color: rgba(207, 215, 199,0.85);
+    background-color: rgba(207, 215, 199, 0.85);
     height: auto;
     color: var(--dark-1);
     width: 100%;
@@ -171,7 +171,7 @@ main > h2 {
     border-radius: 5px;
 }
 
-.weather-summary > h3 {
+.weather-summary>h3 {
     padding-bottom: 5px;
     border-bottom: 5px double #000;
     border-radius: 100px;
@@ -294,7 +294,8 @@ footer .map {
     max-width: 1200px;
     margin: auto;
 }
-footer .map iframe{
+
+footer .map iframe {
     width: 100%;
     height: 300px;
 }
@@ -304,34 +305,37 @@ footer .social-media {
     list-style: none;
     padding: 0;
 }
-footer .social-media > li {
+
+footer .social-media>li {
     margin: 5px 15px;
     max-width: 50px;
 }
-footer .social-media > li > a > img {
+
+footer .social-media>li>a>img {
     border-radius: 100px;
     transition: .5s all;
 }
-footer .social-media > li:hover > a > img {
+
+footer .social-media>li:hover>a>img {
     border-radius: 0;
     box-shadow: 0 0 10px 0 #fff;
 }
 
-footer .social-media > li:first-of-type {
+footer .social-media>li:first-of-type {
     margin-left: 0;
 }
 
-.footer-cta > p > a {
+.footer-cta>p>a {
     position: relative;
     margin-left: 20px;
 }
 
-.footer-cta > p > a::before {
+.footer-cta>p>a::before {
     content: "";
-    position: absolute;    
+    position: absolute;
     height: 30px;
     width: 30px;
-    background-size: cover;    
+    background-size: cover;
     left: -40px;
 }
 

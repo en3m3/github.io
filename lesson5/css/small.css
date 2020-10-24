@@ -119,8 +119,8 @@ div {
     color: #fff;
     position: relative;
     padding: 15px 5px;
-    height: auto;   
-    font-size: 10px; 
+    height: auto;
+    font-size: 10px;
 }
 
 #logo {
@@ -130,10 +130,10 @@ div {
     padding: 5px;
     align-self: center;
     height: 80px;
-    width: auto; 
+    width: auto;
 }
 
-.top-heading-container{
+.top-heading-container {
     margin-left: 5%;
 }
 
@@ -160,7 +160,8 @@ footer .map {
     max-width: 1200px;
     margin: auto;
 }
-footer .map iframe{
+
+footer .map iframe {
     width: 100%;
     height: 300px;
 }
@@ -170,34 +171,37 @@ footer .social-media {
     list-style: none;
     padding: 0;
 }
-footer .social-media > li {
+
+footer .social-media>li {
     margin: 5px 15px;
     max-width: 50px;
 }
-footer .social-media > li > a > img {
+
+footer .social-media>li>a>img {
     border-radius: 100px;
     transition: .5s all;
 }
-footer .social-media > li:hover > a > img {
+
+footer .social-media>li:hover>a>img {
     border-radius: 0;
     box-shadow: 0 0 10px 0 #fff;
 }
 
-footer .social-media > li:first-of-type {
+footer .social-media>li:first-of-type {
     margin-left: 0;
 }
 
-.footer-cta > p > a {
+.footer-cta>p>a {
     position: relative;
     margin-left: 20px;
 }
 
-.footer-cta > p > a::before {
+.footer-cta>p>a::before {
     content: "";
-    position: absolute;    
+    position: absolute;
     height: 30px;
     width: 30px;
-    background-size: cover;    
+    background-size: cover;
     left: -40px;
 }
 
@@ -242,7 +246,7 @@ nav ul {
 nav ul li {
     height: 0;
     max-height: 0;
-    transition: all 1s;    
+    transition: all 1s;
     overflow: hidden;
     padding: 0 0;
     width: 100%;
@@ -372,7 +376,7 @@ nav a:visited {
     position: relative;
 }
 
-.hero-box > img {
+.hero-box>img {
     width: 100%;
 }
 

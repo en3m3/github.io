@@ -6,16 +6,16 @@ let modified = new Date();
 let formattedDate = `${months[modified.getMonth()]} ${modified.getDate()}, ${modified.getFullYear()}`;
 document.getElementById("modified").innerHTML = formattedDate;
 
-navtoggle.addEventListener("click", function() {
+navtoggle.addEventListener("click", function () {
     nav.classList.toggle("nav-open");
 });
 
-document.addEventListener("DOMContentLoaded", function(){
-    if(document.body.classList.contains("preston")) {
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.body.classList.contains("preston")) {
         let notice = document.querySelector("#friday-notice");
         let today = new Date();
         let weekDay = new Date().getDay();
-        if(weekDay === 5) {
+        if (weekDay === 5) {
             notice.classList.remove("hide");
         }
     }
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 WebFont.load({
     google: {
-      families: [
-         'Rubik',
-         'Montserrat',
-      ]
+        families: [
+            'Rubik',
+            'Montserrat',
+        ]
     }
-  });  
+});

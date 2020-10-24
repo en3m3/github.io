@@ -71,11 +71,11 @@
         width: auto;
         border-radius: 15px;
         min-width: 350px;
-        background-color: rgba(207, 215, 199,0.85);
-        color: var(--light-1);        
+        background-color: rgba(207, 215, 199, 0.85);
+        color: var(--light-1);
     }
 
-    .weather-summary > h3 {
+    .weather-summary>h3 {
         border-color: #fffdf0;
     }
 
@@ -105,14 +105,17 @@
         flex-direction: row-reverse;
         justify-content: space-around;
     }
-    .fifty-percent > div {
+
+    .fifty-percent>div {
         width: 50%;
         padding: 25px;
     }
+
     footer .address {
         display: block;
-    }    
-    .footer-cta > p > a {
+    }
+
+    .footer-cta>p>a {
         margin-left: 0;
-    }    
+    }
 }

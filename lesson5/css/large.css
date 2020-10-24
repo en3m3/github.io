@@ -1,18 +1,22 @@
 @media only screen and (min-width: 1230px) {
-    html, body {
+
+    html,
+    body {
         font-size: 18px;
         max-width: 1300px;
         margin: auto;
     }
+
     nav ul {
         padding: 0px 100px;
         white-space: nowrap;
     }
-  
+
     nav>ul>li a {
         letter-spacing: -0.025em;
     }
+
     nav>ul>li a:hover {
         letter-spacing: -0.025em;
-    }    
+    }
 }

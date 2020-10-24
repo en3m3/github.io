@@ -74,7 +74,7 @@
     .weather-summary>h3 {
         border-color: var(--light-1);
     }
-    
+
     .five-forecast {
         grid-template: 1fr / repeat(5, 1fr);
     }
