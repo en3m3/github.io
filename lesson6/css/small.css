@@ -112,8 +112,7 @@ div {
     background-color: var(--accent-1);
     width: 100%;
     display: grid;
-    grid-template: 1fr / 3fr 5fr 0fr;
-    text-align: center;
+    grid-template: 1fr / 3fr 8fr 1fr;
     color: #fff;
     position: relative;
     padding: 5px;
@@ -121,7 +120,6 @@ div {
 }
 
 .top-heading-container {
-    margin-left: 5%;
     font-size: 10px;
 }
 
@@ -143,14 +141,16 @@ div {
     box-sizing: border-box;
     padding: 5px;
     align-self: center;
-    height: 80px;
+    height: auto;
     width: auto;
 }
 
 .site-title {
-    align-self: center;
-    width: 100%;
     font-size: 1.6em;
+}
+
+main {
+    margin: 0 15px;
 }
 
 main>h2 {
