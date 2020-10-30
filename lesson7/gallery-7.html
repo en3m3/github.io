@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Sherman Peak Weather | Local Weather For the Sherman Peak Idaho
-        Area</title>
+        Area | Gallery</title>
     <meta content="" name="author">
     <meta content="Sherman Peak Weather" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -14,39 +14,43 @@
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
 </head>
-
-<body class="home">
-<header>
-    <div class="top-bar">
-        <img src="images/logo_white.png"
-            alt="Sherman Peak Weather Station Logo" id="logo">
-        <div class="top-heading-container">
-            <h1 class="site-title">Sherman Peak Weather Station</h1>
-            <h2 class="slogan">Let's explore together</h2>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="images/logo_white.png"
+                alt="Sherman Peak Weather Station Logo" id="logo">
+            <div class="top-heading-container">
+                <h1 class="site-title">Sherman Peak Weather Station</h1>
+                <h2 class="slogan">Let's explore together</h2>
+            </div>
+            <div id="mobile-toggle">&#9776;</div>
         </div>
-        <div id="mobile-toggle">&#9776;</div>
-    </div>
-    <nav>
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="preston-7.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-
-
-
-
-</main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <main>
+            <div class="gallery-grid">
+                <img data-src="images/gallery/barn.jpg" src="images/gallery/placeholder.jpg" alt="" />
+                <img data-src="images/gallery/cumulus.jpg" src="images/gallery/placeholder.jpg" alt="" />
+                <img data-src="images/gallery/dawn.jpg" src="images/gallery/placeholder.jpg" alt="" />
+                <img data-src="images/gallery/fog.jpg" src="images/gallery/placeholder.jpg" alt="" />
+                <img data-src="images/gallery/lightning.jpg" src="images/gallery/placeholder.jpg" alt="" />
+                <img data-src="images/gallery/rainclouds.jpg" src="images/gallery/placeholder.jpg" alt="" />
+                <img data-src="images/gallery/sunrise.jpg" src="images/gallery/placeholder.jpg" alt="" />
+                <img data-src="images/gallery/sunset.jpg" src="images/gallery/placeholder.jpg" alt="" />
+                <img data-src="images/gallery/thunderstorm.jpg" src="images/gallery/placeholder.jpg" alt="" />
+            </div>
+    </main>
+</body>
 <footer>
     <div class="fifty-percent">
         <div class="footer-cta">
@@ -89,6 +93,7 @@
     src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
 </script>
 <script src="js/script.js"></script>
+<script src="js/lazy.js"></script>
 </body>
 
 </html>
