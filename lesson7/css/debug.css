@@ -1,0 +1,25 @@
+/*********DEBUG*********/
+main {
+    min-height: 670px;
+
+}
+
+body#debug div {
+    outline: 3px solid #f00;
+}
+
+body#debug footer {
+    outline: 3px solid #0f0;
+}
+
+body#debug main {
+    outline: 3px solid #00f;
+}
+
+body#debug header {
+    outline: 3px solid #ff0;
+}
+
+body#debug section {
+    outline: 3px solid #0ff;
+}

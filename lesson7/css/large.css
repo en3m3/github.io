@@ -1,0 +1,30 @@
+@media only screen and (min-width: 1230px) {
+
+    html,
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    nav ul {
+        padding: 5px 100px;
+        white-space: nowrap;
+    }
+
+    nav>ul>li a {
+        letter-spacing: -0.025em;
+    }
+
+    nav>ul>li a:hover {
+        letter-spacing: -0.025em;
+    }
+
+    .top-heading-container {
+        font-size: 22px;
+        padding-right: 100px;
+    }
+}
