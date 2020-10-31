@@ -201,6 +201,8 @@ main>h2 {
     background-image: url(../images/fiveday.jpg);
     background-size: cover;
     color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .five-day h3 {
