@@ -34,11 +34,7 @@
     
     .gallery-grid img {
         transition: 1s all ease-in-out;
-        border: 1px solid #000;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;        
+        border: 1px solid #000;    
     }
     
     .gallery-grid img:hover {
