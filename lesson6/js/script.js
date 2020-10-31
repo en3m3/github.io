@@ -2,8 +2,8 @@ const navtoggle = document.querySelector('#mobile-toggle');
 const nav = document.querySelector('nav');
 
 var months = ["Janurary", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November"];
-let modified = new Date();
-let formattedDate = `${months[modified.getMonth()]} ${modified.getDate()}, ${modified.getFullYear()}`;
+let today = new Date();
+let formattedDate = `${months[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
 document.getElementById("modified").innerHTML = formattedDate;
 
 navtoggle.addEventListener("click", function () {

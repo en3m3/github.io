@@ -3,10 +3,12 @@
     html,
     body {
         font-size: 18px;
+    }
+
+    main {
         max-width: 1300px;
         margin: auto;
     }
-
     nav ul {
         padding: 0px 100px;
         white-space: nowrap;

@@ -114,8 +114,8 @@ div {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: flex-start;
-    text-align: center;
+    justify-content: space-between;
+    text-align: left;
     color: #fff;
     position: relative;
     padding: 15px 5px;
@@ -137,9 +137,12 @@ div {
     margin-left: 5%;
 }
 
-.site-title {
-    align-self: center;
+.top-heading-container > div,
+.top-heading-container > img {
+    display: inline-block;
+    vertical-align: middle;
 }
+
 
 footer {
     background-color: var(--accent-1);
@@ -209,22 +212,6 @@ footer .address {
     display: none;
 }
 
-footer .address::before {
-    background-image: url(../images/pin.png);
-    top: -12px;
-}
-
-footer .phone::before {
-    background-image: url(../images/phone.png);
-    top: -6px;
-}
-
-footer .email::before {
-    background-image: url(../images/email.png);
-    top: -3px;
-}
-
-
 /*********************/
 /* Common Navigation */
 /*********************/
@@ -290,9 +277,13 @@ nav>ul>li a {
     transition: max-height 1.5s, opacity .5s;
 }
 
-.nav-open>ul>li.active {
+nav>ul>li.active {
     background-image: var(--white-gradient);
     pointer-events: none;
+    filter: invert(1);
+}
+nav>ul>li.active a {
+    color: var(--dark-1);
 }
 
 .nav-open>ul>li.active a {
@@ -318,6 +309,10 @@ nav>ul>li>a:hover:after {
 nav a,
 nav a:visited {
     color: var(--light-1);
+}
+
+.hide {
+    display: none !important;
 }
 
 /************************/
@@ -396,11 +391,14 @@ nav a:visited {
     background-image: url(../images/fiveday.jpg);
     background-size: cover;
     color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;    
 }
 
 .five-day h3 {
     padding: 15px;
     margin: 0;
+    -webkit-text-stroke: 1px #000;
 }
 
 .five-forecast {
@@ -446,12 +444,12 @@ nav a:visited {
 #friday-notice {
     width: 100%;
     padding: 30px;
-    background-color: var(--accent-1);
-    color: #fff;
+    background-color: var(--light-2);
+    color: var(--dark-1);
     margin: 15px 0;
     border: var(--dark-border);
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     text-align: center;
 }
 
@@ -474,7 +472,12 @@ nav a:visited {
     max-height: 300px;
 }
 
-
+.contact-icon {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 @media only screen and (min-width: 500px) {
     .five-forecast {
