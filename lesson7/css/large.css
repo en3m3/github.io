@@ -6,7 +6,7 @@
     }
 
     main {
-        max-width: 1300px;
+        max-width: 1200px;
         margin: auto;
     }
 
@@ -30,5 +30,20 @@
 
     .gallery-grid {
         grid-template-columns: 1fr 1fr 1fr;
-    }    
+    }  
+    
+    .gallery-grid img {
+        transition: 1s all ease-in-out;
+        border: 1px solid #000;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;        
+    }
+    
+    .gallery-grid img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 0 #000;
+        border-radius: 5px;
+    }
 }

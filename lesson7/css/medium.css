@@ -10,6 +10,12 @@
         display: none;
     }
 
+    main {
+        max-width: 750px;
+        margin: auto;
+    }
+
+
     nav {
         border-bottom: 5px solid #000;
     }
