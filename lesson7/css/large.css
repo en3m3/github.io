@@ -6,7 +6,7 @@
     }
 
     main {
-        max-width: 1200px;
+        max-width: 1300px;
         margin: auto;
     }
 
@@ -34,7 +34,7 @@
     
     .gallery-grid img {
         transition: 1s all ease-in-out;
-        border: 1px solid #000;    
+        border: 1px solid #000;
     }
     
     .gallery-grid img:hover {
