@@ -488,6 +488,10 @@ nav a:visited {
     padding: 3% 0;
 }
 
+.gallery-grid figure {
+    margin: 0;
+}
+
 @media only screen and (min-width: 500px) {
     .five-forecast {
         grid-template: repeat(3, 1fr) / 1fr 1fr;

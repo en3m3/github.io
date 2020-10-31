@@ -32,14 +32,25 @@
         grid-template-columns: 1fr 1fr 1fr;
     }  
     
-    .gallery-grid img {
+    .gallery-grid figure img {
         transition: 1s all ease-in-out;
         border: 1px solid #000;
+        z-index: 1;
     }
     
-    .gallery-grid img:hover {
-        transform: scale(1.1);
+    .gallery-grid figure:hover > img{
         box-shadow: 0 0 20px 0 #000;
         border-radius: 5px;
+        z-index: 2;
     }
+
+    .gallery-grid figure:nth-last-of-type(3n):hover > img {
+        transform: scale(1.1) translateX(30px);
+    }    
+    .gallery-grid figure:nth-last-of-type(3n-1):hover > img {
+        transform: scale(1.1) translateX(0);
+    } 
+    .gallery-grid figure:nth-last-of-type(3n-2):hover > img {
+        transform: scale(1.1) translateX(-30px);
+    }         
 }
