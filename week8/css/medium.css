@@ -1,0 +1,127 @@
+@media only screen and (min-width: 800px) {
+
+    html,
+    body {
+        font-size: 16px;
+        grid-template: 220px 3fr 1fr / 1fr;
+    }
+
+    #mobile-toggle {
+        display: none;
+    }
+
+    main {
+        max-width: 750px;
+        margin: auto;
+    }
+
+
+    nav {
+        border-bottom: 5px solid #000;
+    }
+
+    nav ul li {
+        align-items: flex-end;
+        max-height: initial;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        text-align: center;
+        height: auto;
+        padding: 0px 40px;
+    }
+
+    nav>ul>li a {
+        opacity: 1;
+        letter-spacing: -0.075em;
+    }
+
+    nav>ul>li a:hover {
+        text-align: center;
+        letter-spacing: -0.075em;
+    }
+
+    .top-bar {
+        height: 160px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        display: flex;
+    }
+
+    #logo {
+        max-height: 100%;
+        border-style: none;
+        height: auto;
+        width: 350px;
+    }
+
+    .top-heading-container {
+        margin-left: 0;
+        padding-right: 50px;
+        font-size: 16px;
+    }
+
+    .weather-summary {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        min-height: 300px;
+        height: auto;
+        width: auto;
+        border-radius: 15px;
+        min-width: 350px;
+        background-color: rgba(207, 215, 199, 0.85);
+        color: var(--light-1);
+    }
+
+    .weather-summary>h3 {
+        border-color: #fffdf0;
+    }
+
+    .five-forecast {
+        grid-template: 1fr / repeat(5, 1fr);
+    }
+
+    .preston article {
+        min-height: 500px;
+        padding: 25px;
+    }
+
+    .preston article img {
+        float: right;
+    }
+
+    .preston article .article-content {
+        display: block;
+    }
+
+    .preston article iframe {
+        display: block;
+    }
+
+    .fifty-percent {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .fifty-percent>div {
+        width: 50%;
+        padding: 25px;
+    }
+
+    footer .address {
+        display: block;
+    }
+
+    .footer-cta>p>a {
+        margin-left: 0;
+    }
+}

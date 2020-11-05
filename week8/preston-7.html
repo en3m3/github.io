@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sherman Peak Weather | Local Weather For the Sherman Peak Idaho
+        Area | Preston</title>
+    <meta content="" name="author">
+    <meta content="Sherman Peak Weather" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/debug.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body class="preston">
+    <header>
+        <div class="top-bar">
+            <img src="images/logo_white.png"
+                alt="Sherman Peak Weather Station Logo" id="logo">
+            <div class="top-heading-container">
+                <h1 class="site-title">Sherman Peak Weather Station</h1>
+                <h2 class="slogan">Let's explore together</h2>
+            </div>
+            <div id="mobile-toggle">&#9776;</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston-7.html">Preston</a>
+                </li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div id="friday-notice" class="hide">
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at
+            the city park pavilion.
+        </div>
+
+        <section class="hero-box">
+            <picture>
+                <source media="(max-width:600px)"
+                    srcset="images/lesson6x600.jpg">
+                <source media="(max-width: 1026px) and (min-width: 601px)"
+                    srcset="images/lesson6x1026.jpg">
+                <img src="images/lesson6x1500.jpg"
+                    alt="Sunny landscape picture">
+            </picture>
+            <div class="weather-summary">
+                <h3>Weather Summary</h3>
+                <ul>
+                    <li>Currently: <span id="current">Rainy</span></li>
+                    <li>Temp: <span id="temp">49</span>&deg;F</li>
+                    <li>Wind Chill: <span id="wind-chill"></span></li>
+                    <li>Humidity: <span id="humidity">93</span>%</li>
+                    <li>Wind Speed: <span id="wind-speed">88</span> mph
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="detailed-weather">
+            <div class="five-day">
+                <h3>Five Day Forecast</h3>
+                <div class="five-forecast">
+                    <div class="forcast-day">
+                        <p><img src="images/rain.png" alt="rain"><span
+                                class="day-of-week">Mon</span></p>
+                        <hr>
+                        <div class="five-content">
+                            <p><strong>Rain</strong></p>
+                            <p>High <span>58&deg;</span></p>
+                            <p>Low <span>50&deg;</span></p>
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>100%</span></p>
+                            <p>A little wet</p>
+                        </div>
+                    </div>
+                    <div class="forcast-day">
+                        <p><img src="images/partial.png"
+                                alt="Partly Cloudy"><span
+                                class="day-of-week">Tue</span></p>
+                        <hr>
+                        <div class="five-content">
+                            <p><strong>Partly Cloudy</strong></p>
+                            <p>High <span>64&deg;</span></p>
+                            <p>Low <span>58&deg;</span></p>
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>52%</span></p>
+                            <p>Where did the sun go?</p>
+                        </div>
+                    </div>
+                    <div class="forcast-day">
+                        <p><img src="images/sunny.png" alt="sunny"><span
+                                class="day-of-week">Wed</span></p>
+                        <hr>
+                        <div class="five-content">
+                            <p><strong>Sunny</strong></p>
+                            <p>High <span>72&deg;</span></p>
+                            <p>Low <span>64&deg;</span></p>
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>48%</span></p>
+                            <p>Hot Hot Hot</p>
+                        </div>
+                    </div>
+                    <div class="forcast-day">
+                        <p><img src="images/drizzle.png"
+                                alt="drizzle"><span
+                                class="day-of-week">Thu</span></p>
+                        <hr>
+                        <div class="five-content">
+                            <strong>Drizzle</strong>
+                            <p>High <span>64&deg;</span></p>
+                            <p>Low <span>58&deg;</span></p>
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>98%</span></p>
+                            <p>Almost misty</p>
+                        </div>
+                    </div>
+                    <div class="forcast-day">
+                        <p><img src="images/rain.png" alt="rain"><span
+                                class="day-of-week">Fri</span></p>
+                        <hr>
+                        <div class="five-content">
+                            <p><strong>Rain</strong></p>
+                            <p>High <span>60&deg;</span></p>
+                            <p>Low <span>55&deg;</span></p>
+                            <p>Barometric <span>38inHg</span></p>
+                            <p>Humidity <span>100%</span></p>
+                            <p>More rain?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article>
+                <h4>Holiday Craft Fair</h4>
+                <div class="article-content">
+                    <picture>
+                        <source media="(min-width:800px)"
+                            srcset="images/winterfair.jpg">
+                        <img src="images/winterfairsm.jpg"
+                            alt="Winter Craft Fair" class="article-image">
+                    </picture>
+                    <div>
+                        <p>The Holiday craft fair is coming this November.
+                            Get
+                            started with your holiday shopping
+                            browsing the unique hand made or rare crafts.
+                        </p>
+
+                        <p> Filler Text: Since they are still preserved in
+                            the
+                            rocks for us to see, they must have been formed
+                            quite recently, that is, geologically speaking.
+                            What can explain these striations and their
+                            common
+                            orientation? Did you ever hear about the Great
+                            Ice
+                            Age or the Pleistocene Epoch? Less than one
+                            million
+                            years ago, in fact, some 12,000 years ago, an
+                            ice
+                            sheet many thousands of feet thick rode over
+                            Burke
+                            Mountain in a southeastward direction. The many
+                            boulders frozen to the underside of the ice
+                            sheet
+                            tended to scratch the rocks over which they
+                            rode.
+                            The scratches or striations seen in the park
+                            rocks
+                            were caused by these attached boulders. The ice
+                            sheet also plucked and rounded Burke Mountain
+                            into
+                            the shape it possesses today.
+                        </p>
+                    </div>
+                    <p><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d133666.5814480094!2d-111.44980836243145!3d42.24345927218467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d3010f5785ac600!2sThe%20National%20Oregon%2FCalifornia%20Trail%20Center!5e0!3m2!1sen!2sus!4v1602973477339!5m2!1sen!2sus"
+                            width="600" height="450"
+                            style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe></p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div class="fifty-percent">
+            <div class="footer-cta">
+                <h3>Contact Information</h3>
+                <p><a class="address"
+                        href="https://goo.gl/maps/YfqXwAWgVLEMBX2X6"
+                        target="_blank"></a></p>
+                <p><a class="address"
+                    href="https://goo.gl/maps/YfqXwAWgVLEMBX2X6"
+                    target="_blank">8 Mile Creek Rd Soda Springs, ID 83276</p>
+                <a class="phone"
+                        href="tel:888-555-5555">888-555-5555</a></p>
+                <p><a href="sms:weatherstation@shermanpeakweather.com"
+                        class="email">weatherstation<wbr>@shermanpeakweather.com</a>
+                </p>
+                <ul class="social-media">
+                    <li><a href="facebook.com" target="_blank"><img
+                                src="images/facebook.jpg"
+                                alt="Facebook"></a></li>
+                    <li><a href="twitter.com" target="_blank"><img
+                                src="images/twitter.jpg" alt="Twitter"></a>
+                    </li>
+                    <li><a href="instagram.com" target="_blank"><img
+                                src="images/instagram.jpg"
+                                alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23546.972424588883!2d-111.5642492!3d42.4623858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755b7424f8fc739%3A0xf6d7885d67173689!2sSherman%20Peak!5e0!3m2!1sen!2sus!4v1602975051866!5m2!1sen!2sus"
+                    width="600" height="450"
+                    style="border:0;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <p><span id="modified"></span> &copy; | Erik Moffett</p>
+    </footer>
+    <script src="js/windchill.js"></script>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
