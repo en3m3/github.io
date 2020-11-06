@@ -495,7 +495,7 @@ nav a:visited {
 /* Form Styling */
 form fieldset {
     margin: 2rem 0;
-    border: 1px soliv #445ba9;
+    border: 1px solid #445ba9;
     border-radius: 10px;
     padding: .5rem 2%;
 }
@@ -531,7 +531,7 @@ form label.sbs {
 
 form input.submitBtn {
     border: none;
-    background-color: #9c2c13;
+    background-color: #46786e;
     color: #fff;
     border-radius: 1rem;
     padding: .75 1.5rem;
@@ -541,11 +541,27 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: #730000 solid 6px;
 }
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+label[for="additional"]{
+    margin: 0 auto;
+}
+
+form textarea {
+    display: block;
+    width: 96%;
+    margin-left: .05rem;
+    max-width: 20rem;
+}
+
+
+.stormCenter form {
+    max-width: 400px;
 }
 
 
