@@ -409,12 +409,12 @@ nav>ul>li a {
     transition: max-height 1.5s, opacity .5s;
 }
 
-.nav-open>ul>li.active {
+nav>ul>li.active {
     background-image: var(--white-gradient);
     pointer-events: none;
 }
 
-.nav-open>ul>li.active a {
+nav>ul>li.active a {
     color: var(--dark-1);
 }
 
