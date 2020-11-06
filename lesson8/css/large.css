@@ -52,5 +52,10 @@
     } 
     .gallery-grid figure:nth-last-of-type(3n-2):hover > img {
         transform: scale(1.1) translateX(-30px);
-    }         
+    } 
+    
+    /* Form Syling */
+    form label.sbs {
+        padding: .4rem 0;
+    }
 }
