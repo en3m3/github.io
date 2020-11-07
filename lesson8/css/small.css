@@ -495,35 +495,49 @@ nav a:visited {
 /* Form Styling */
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid rgb(53, 100, 116);;
     border-radius: 10px;
     padding: .5rem 2%;
+    background-image: var(--white-gradient); 
 }
 form legend {
     color: #445ba9;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 0 .5rem;   
 }
-form label.top, form div {
+form label, form div {
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
     font-size: .8rem;
 }
 
-form label.top input, form label.top select {
+form label input, 
+form label select {
     -webkit-appearance: none;
     display: block;
     font-size: 16px;
-    border: solid 1px #999;
+    border: solid 1px rgb(53, 100, 116);;
     border-radius: 4px;
     padding: .75rem;
-    color: #555;
+    color: var(--dark-1);
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: #fff;
 }
 
-form label.sbs {
+.stormcenter {
+    background-image: var(--white-gradient);
+}
+
+span#severityOutput {
+    font-size: 20px;
+    margin-left: 15px;
+    color: var(--accent-1);
+    border-bottom: 2px solid #000
+
+}
+
+form label {
     display: block;
     padding: .75rem 0;
     color: #555;
@@ -555,13 +569,140 @@ label[for="additional"]{
 form textarea {
     display: block;
     width: 96%;
-    margin-left: .05rem;
+    margin-left: .2rem;
     max-width: 20rem;
+    min-height: 100px;
 }
 
 
-.stormCenter form {
+form {
     max-width: 400px;
+}
+
+
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent;
+    border: none;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+input::-webkit-slider-runnable-track { 
+    background: rgb(215,232,29);
+    background: linear-gradient(90deg, rgba(215,232,29,1) 0%, rgba(255,170,27,1) 25%, rgba(196,12,12,1) 50%, rgba(120,0,255,1) 75%, rgba(0,15,255,1) 100%);
+}
+input::-moz-range-track { 
+    background: rgb(215,232,29);
+    background: linear-gradient(90deg, rgba(215,232,29,1) 0%, rgba(255,170,27,1) 25%, rgba(196,12,12,1) 50%, rgba(120,0,255,1) 75%, rgba(0,15,255,1) 100%);  
+}
+input::-ms-track { 
+    background: rgb(215,232,29);
+    background: linear-gradient(90deg, rgba(215,232,29,1) 0%, rgba(255,170,27,1) 25%, rgba(196,12,12,1) 50%, rgba(120,0,255,1) 75%, rgba(0,15,255,1) 100%);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 10px double  rgb(53, 100, 116);
+    height: 25px;
+    width: 10px;
+    top: 10px;
+    position: relative;
+    margin: -20px 0 0 2px;
+    border-radius: 5px;
+    background: var(--light-2);
+    cursor: pointer;
+    margin-top: -20px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; 
+  }
+  
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    border: 10px double  rgb(53, 100, 116);
+    height: 25px;
+    width: 10px;
+    top: 10px;
+    position: relative;
+    margin: -20px 0 0 2px;
+    border-radius: 5px;
+    background: var(--light-2);
+    cursor: pointer;
+    margin-top: -20px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; 
+}
+          
+ 
+input[type=range]::-ms-thumb {
+        -webkit-appearance: none;
+        border: 10px double  rgb(53, 100, 116);
+        height: 25px;
+        width: 10px;
+        top: 10px;
+        position: relative;
+        margin: -20px 0 0 2px;
+        border-radius: 5px;
+        background: var(--light-2);
+        cursor: pointer;
+        margin-top: -20px;
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+
+}
+form input[type="date"] {
+    color: var(--accent-1);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+form input::placeholder {
+    color: rgba(70, 120, 110, 0.8);
+    font-size: 14px;
+}
+
+form input:focus::placeholder {
+    color: var(--accent-1);
+    font-size: 12px;
+    font-weight: 400;
+    top: -15px;
+    position: relative;
+}
+
+input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type="radio"]:checked {  
+    /* border: 10px double #fff; */
+    background-color: var(--dark-2);
+}
+
+input[type="radio"]:focus {
+    outline: none;
+}
+
+.thanks main h1 {
+    text-align: center;
+    margin-top: 50px;
 }
 
 

@@ -26,6 +26,7 @@ function severityChange(severityLevel) {
     document.getElementById("severityOutput").innerHTML = severityLevel;
 }
 
+
 WebFont.load({
     google: {
         families: [

@@ -41,41 +41,40 @@
 
     <main>
         <h1>Report a Storm</h1>
-        <form action="stormcenter.html" method="GET">
+        <form action="thanks.html" method="GET">
             <fieldset>
                 <legend>Storm Reporter</legend>
                 <label for="fullName" class="top">Full Name
-                    <input type="text" name="fullName" pattern="[A-Za-z]{5,}" required>
+                    <input type="text" name="fullName" pattern="^[A-Za-z ]{5,}" required>
                 </label>
                 <label for="email" class="top">Email
                     <input type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="someone@domain.com">
                 </label>
                 <label for="phone" class="top">Phone
-                    <input type="tel" name="phone" pattern="[1-9\-\(\)]{5,}" placeholder="8885551234" required>
+                    <input type="tel" name="phone" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" placeholder="8885551234" required>
                 </label>
                 <label for="zip" class="top">
-                    <input type="number" name="zip" pattern="[1-9]{5,}" placeholder="90210" required>
+                    <input type="number" name="zip" placeholder="90210" required>
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label for="stormDate" class="sbs">Storm Date
+                <label for="stormDate">Storm Date
                     <input type="date" name="stormDate">
                 </label>
-                <label for="stormType" class="sbs">Storm Type
+                <label for="stormType">Storm Type
                     <input list="storms" type="text" name="stormType">
                 </label>
-                <datalist id="storms" class="sbs">
+                <datalist id="storms">
                     <option value="Flash Flood">
                     <option value="Hail">
                     <option value="Hurricane">
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-                <label for="severity" class="sbs">Storm Severity
+                <label for="severity">Storm Severity<span id="severityOutput">1</span>
                     <input list="ticks" type="range" name="severity" max="10" min="1" step="1" value="1"
                 oninput="severityChange(this.value)" onchange="severityChange(this.value)">
-                    <span id="severityOutput">1</span>
                     <datalist id="ticks">
                         <option value="1">
                         <option value="2">
@@ -89,7 +88,7 @@
                         <option value="10">                          
                     </datalist>
                 </label>
-                <label for="region" class="sbs">Storm Region
+                <label for="region">Storm Region
                     <select name="region" id="region">
                         <option value="" disabled>Enter Region...</option>
                         <option value="Preston">Preston</option>
@@ -97,20 +96,16 @@
                         <option value="fishHaven">Fish Haven</option>
                     </select>
                 </label>
-                <label class="sbs">User in-danger level
-                    <input type="radio" name="inDanger" value="yes"> Yes
-                    <input type="radio" name="inDanger" value="maybe"> Maybe
-                    <input type="radio" name="inDanger" value="no"> No
+                <label>User in-danger level
+                    <label><input type="radio" name="inDanger" value="yes"> Yes</label>
+                    <label><input type="radio" name="inDanger" value="maybe"> Maybe</label>
+                    <label><input type="radio" name="inDanger" value="no"> No</label>
                 </label>
-                <label for="additional" class="sbs">Additional information or comments:
+                <label for="additional">Additional information or comments:
                     <textarea name="additional" value=""></textarea>
                 </label>
                 <input type="submit" class="submitBtn">
             </fieldset>            
-
-
-
-
         </form>
     </main>
     <footer>
