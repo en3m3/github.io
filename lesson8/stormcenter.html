@@ -44,26 +44,26 @@
         <form action="thanks.html" method="GET">
             <fieldset>
                 <legend>Storm Reporter</legend>
-                <label for="fullName" class="top">Full Name
-                    <input type="text" id="fullName" name="fullName" pattern="^[A-Za-z ]{5,}" required>
+                <label class="top">Full Name
+                    <input type="text" name="fullName" pattern="^[A-Za-z ]{5,}" required>
                 </label>
-                <label for="email" class="top">Email
-                    <input type="email" id="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="someone@domain.com">
+                <label class="top">Email
+                    <input type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="someone@domain.com">
                 </label>
-                <label for="phone" class="top">Phone
-                    <input type="tel" id="phone"  name="phone" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" placeholder="8885551234" required>
+                <label class="top">Phone
+                    <input type="tel"  name="phone" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" placeholder="8885551234" required>
                 </label>
-                <label for="zip" class="top">
-                    <input type="number" for="id" name="zip" placeholder="90210" required>
+                <label class="top">
+                    <input type="number" name="zip" placeholder="90210" required>
                 </label>
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <label for="stormDate">Storm Date
-                    <input type="date" id="stormDate" name="stormDate">
+                <label>Storm Date
+                    <input type="date" name="stormDate">
                 </label>
-                <label for="stormType">Storm Type
-                    <input list="storms" id="stormType" type="text" name="stormType">
+                <label>Storm Type
+                    <input list="storms" type="text" name="stormType">
                 </label>
                 <datalist id="storms">
                     <option value="Flash Flood">
@@ -72,8 +72,8 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-                <label for="severity">Storm Severity<span id="severityOutput">1</span>
-                    <input list="ticks" id="severity" type="range" name="severity" max="10" min="1" step="1" value="1"
+                <label >Storm Severity<span id="severityOutput">1</span>
+                    <input list="ticks" type="range" name="severity" max="10" min="1" step="1" value="1"
                 oninput="severityChange(this.value)" onchange="severityChange(this.value)">
                     <datalist id="ticks">
                         <option value="1">
@@ -88,8 +88,8 @@
                         <option value="10">                          
                     </datalist>
                 </label>
-                <label for="region">Storm Region
-                    <select name="region" id="region">
+                <label >Storm Region
+                    <select name="region">
                         <option value="" disabled>Enter Region...</option>
                         <option value="Preston">Preston</option>
                         <option value="sodaSprings">Soda Springs</option>
@@ -101,7 +101,7 @@
                     <label><input type="radio" name="inDanger" value="maybe"> Maybe</label>
                     <label><input type="radio" name="inDanger" value="no"> No</label>
                 </label>
-                <label for="additional">Additional information or comments:
+                <label>Additional information or comments:
                     <textarea name="additional" value=""></textarea>
                 </label>
                 <input type="submit" class="submitBtn" value="Report Your Storm">
