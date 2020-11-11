@@ -7,7 +7,7 @@
     grid-gap: 8px;
 }
 
-.cards > section {
+.cards > section { 
     background-color: #b9b9cc;
     border-radius: 3px;
     border: 1px solid #000;

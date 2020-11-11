@@ -21,7 +21,7 @@ fetch(requestURL)
         card.appendChild(h2);
         card.appendChild(birthday);
         card.appendChild(birthplace);
-        card.appendChild(image);
+        card.appendChild(image); 
         image.setAttribute('src', prophets[i].imageurl);
         document.querySelector('.cards').appendChild(card);
 
