@@ -1,0 +1,22 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 24%));
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;    
+    grid-gap: 8px;
+}
+
+.cards > section {
+    background-color: #b9b9cc;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+img {
+    border-style: none;
+    width: auto;
+    height: 300px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0 #000;    
+}
