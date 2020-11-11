@@ -5,6 +5,7 @@
     margin: auto;
     text-align: center;    
     grid-gap: 8px;
+    padding: 50px 0;    
 }
 
 .cards > section { 
