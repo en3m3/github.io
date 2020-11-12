@@ -40,9 +40,10 @@ fetch(requestURL)
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];      
     townArray = {};
+    var eventList = [];
     for (let i = 0; i < towns.length; i++ ) {
         if(towns[i].name == "Fish Haven") {
-            var eventList = getList(towns[i].events);
+            eventList = getList(towns[i].events);
 
             var fishHaven = Town(
                                 towns[i].averageRainfall,
@@ -55,7 +56,7 @@ fetch(requestURL)
                                 )
             townArray["fishHaven"]= fishHaven;
         } else if(towns[i].name == "Preston") {
-            var eventList = getList(towns[i].events);
+            eventList = getList(towns[i].events);
 
             var preston = Town(
                                 towns[i].averageRainfall,
@@ -68,7 +69,7 @@ fetch(requestURL)
                                 )            
             townArray["preston"]= preston;
         } else if(towns[i].name == "Soda Springs") {
-            var eventList = getList(towns[i].events);
+            eventList = getList(towns[i].events);
 
             var sodaSprings = Town(
                                 towns[i].averageRainfall,
@@ -82,7 +83,7 @@ fetch(requestURL)
             townArray["sodaSprings"]= sodaSprings;
         }   
       }
-      console.log(townArray4);
+      console.log(townArray);
   });
 
       //     let card = document.createElement('section');
