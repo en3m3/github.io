@@ -29,7 +29,7 @@ function getList(townEvents) {
     townEvents.forEach(element => {
         events.push(element);
     });
-    return eventList;
+    return events;
 }
 
 var siteTowns = [];
