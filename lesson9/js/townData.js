@@ -22,7 +22,7 @@ function Town(rainfall,
     this.name = name;
     this.photo = photo;
     this.founded = founded;
-
+    return this;
 }
 
 function getList(townEvents) {
