@@ -39,7 +39,6 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];      
-    console.table(jsonObject);  
     townArray = {};
     for (let i = 0; i < towns.length; i++ ) {
         if(towns[i].name == "Fish Haven") {
@@ -83,6 +82,7 @@ fetch(requestURL)
             townArray["sodaSprings"]= sodaSprings;
         }   
       }
+      console.log(townArray4);
   });
 
       //     let card = document.createElement('section');
