@@ -1,5 +1,5 @@
 const requestURL = 'towndata.json';
-
+var townArray = [];
 function Person(first, last, age, eye) {
     this.firstName = first;
     this.lastName = last;
@@ -21,7 +21,7 @@ function Town(rainfall,
     this.motto = motto;
     this.name = name;
     this.photo = photo;
-    this.founded = founded
+    this.founded = founded;
 
 }
 
@@ -84,6 +84,9 @@ fetch(requestURL)
             townArray["sodaSprings"]= sodaSprings;
         }   
       }
+      console.log(fishHaven);
+      console.log(sodaSprings);
+      console.log(preston);
       console.log(townArray);
   });
 
