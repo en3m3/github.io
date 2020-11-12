@@ -27,7 +27,7 @@ function Town(rainfall,
 function getList(townEvents) {
     var events = [];
     townEvents.forEach(element => {
-        events.append(element);
+        events.push(element);
     });
     return eventList;
 }
