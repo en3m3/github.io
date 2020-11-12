@@ -15,7 +15,8 @@ function Town(rainfall,
               photo,
               founded
               ) {
-    this.averageRainFall = population;
+    this.averageRainFall = rainfall;
+    this.population = population
     this.events = events;
     this.motto = motto;
     this.name = name;
@@ -39,7 +40,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];      
-    townArray = {};
+    var townArray = {};
     var eventList = [];
     for (let i = 0; i < towns.length; i++ ) {
         if(towns[i].name == "Fish Haven") {
