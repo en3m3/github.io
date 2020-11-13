@@ -706,6 +706,35 @@ input[type="radio"]:focus {
 }
 
 
+/* Home Page */
+.town-grid {
+    display: block;
+
+}
+
+.town-grid > div {
+    display: block;
+    background-image: var(--white-gradient);
+    padding: 20px 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px 2px #888, inset 0 0 5px 5px #888;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+.town-grid h3 {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #46786e;
+    color: var(--dark-1);
+    -webkit-text-stroke: 1px #000;
+}
+
+.town-grid img {
+    box-shadow: 0 0 12px 2px #888;
+}
+
 @media only screen and (min-width: 500px) {
     .five-forecast {
         grid-template: repeat(3, 1fr) / 1fr 1fr;
