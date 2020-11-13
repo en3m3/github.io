@@ -168,6 +168,11 @@
     .events {
         background-image: url(../images/eventbg.jpg);
         min-height: 500px;
-    }   
+    }  
+
+    .events > div {
+        width: 400px;
+    }
+    
 
 }
