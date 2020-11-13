@@ -747,6 +747,14 @@ input[type="radio"]:focus {
     background-repeat: no-repeat;
 }
 
+.home-hero {
+    background-image: url(../images/homehero.jpg);
+    min-height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;     
+}
+
 @media only screen and (min-width: 500px) {
     .five-forecast {
         grid-template: repeat(3, 1fr) / 1fr 1fr;

@@ -159,6 +159,11 @@
 
     .town-grid > div:nth-of-type(2) img {
         margin: 6px 3px 6px auto;
-    }    
+    }   
+
+    .home-hero {
+        background-image: url(../images/homehero.jpg);
+        min-height: 300px;  
+    }     
 
 }
