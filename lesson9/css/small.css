@@ -764,6 +764,12 @@ input[type="radio"]:focus {
     background-position: bottom;     
 }
 
+.wireframe {
+    display: block;
+    margin: auto;
+    max-width: 1000px;
+}
+
 @media only screen and (min-width: 500px) {
     .five-forecast {
         grid-template: repeat(3, 1fr) / 1fr 1fr;
