@@ -170,9 +170,10 @@
         min-height: 500px;
     }  
 
-    .events > div {
+    .events > div{
         width: 400px;
     }
+    
     
 
 }
