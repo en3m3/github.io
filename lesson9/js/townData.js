@@ -121,4 +121,39 @@ fetch(requestURL)
       buildTownStructure(".town-grid",townArray["sodaSprings"]);
       buildTownStructure(".town-grid",townArray["fishHaven"]);
 
+      let eventSection = document.querySelector(".events");
+      
+      let prestonEvents = document.createElement("div");
+      prestonEvents.appendChild(document.createElement("h3"));
+      prestonEvents.querySelector("h3").textContent = "Preston";
+
+      townArray["preston"].events.forEach(event => {
+        let eventContent = document.createElement("p")
+        eventContent.textContent = event;
+        prestonEvents.appendChild(eventContent);
+      });
+
+      let sodaSpringsEvents = document.createElement("div");
+      sodaSpringsEvents.appendChild(document.createElement("h3"));
+      sodaSpringsEvents.querySelector("h3").textContent = "Preston";
+
+      townArray["sodaSprings"].events.forEach(event => {
+        let eventContent = document.createElement("p")
+        eventContent.textContent = event;
+        sodaSpringsEvents.appendChild(eventContent);
+      });      
+
+
+      let fishHavenEvents = document.createElement("div");
+      fishHavenEvents.appendChild(document.createElement("h3"));
+      fishHavenEvents.querySelector("h3").textContent = "Preston";
+
+      townArray["fishHaven"].events.forEach(event => {
+        let eventContent = document.createElement("p")
+        eventContent.textContent = event;
+        fishHavenEvents.appendChild(eventContent);
+      });        
+
+  
+
   });
