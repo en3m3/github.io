@@ -746,6 +746,10 @@ input[type="radio"]:focus {
     background-image: url(../images/eventbgsm.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .home-hero {
