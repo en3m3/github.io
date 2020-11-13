@@ -154,6 +154,8 @@ fetch(requestURL)
         fishHavenEvents.appendChild(eventContent);
       });        
 
-  
+      eventSection.appendChild(prestonEvents);
+      eventSection.appendChild(sodaSpringsEvents);
+      eventSection.appendChild(fishHavenEvents);
 
   });
