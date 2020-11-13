@@ -133,6 +133,8 @@ fetch(requestURL)
         prestonEvents.appendChild(eventContent);
       });
 
+      eventSection.appendChild(prestonEvents);
+
       let sodaSpringsEvents = document.createElement("div");
       sodaSpringsEvents.appendChild(document.createElement("h3"));
       sodaSpringsEvents.querySelector("h3").textContent = "Preston";
@@ -143,6 +145,7 @@ fetch(requestURL)
         sodaSpringsEvents.appendChild(eventContent);
       });      
 
+      eventSection.appendChild(sodaSpringsEvents);      
 
       let fishHavenEvents = document.createElement("div");
       fishHavenEvents.appendChild(document.createElement("h3"));
@@ -152,10 +155,8 @@ fetch(requestURL)
         let eventContent = document.createElement("p")
         eventContent.textContent = event;
         fishHavenEvents.appendChild(eventContent);
-      });        
+      });           
 
-      eventSection.appendChild(prestonEvents);
-      eventSection.appendChild(sodaSpringsEvents);
       eventSection.appendChild(fishHavenEvents);
 
   });

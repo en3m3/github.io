@@ -752,6 +752,10 @@ input[type="radio"]:focus {
     align-items: flex-end;
 }
 
+.events > div {
+    width: 300px;
+}
+
 .home-hero {
     background-image: url(../images/homeherosm.jpg);
     min-height: 200px;
