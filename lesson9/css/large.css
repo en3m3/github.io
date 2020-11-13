@@ -82,10 +82,15 @@
         margin: 6px 6px 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        width: 100%;
     }    
     .town-grid h3 {
         padding: 10px 0;
         margin-bottom: 15px;
+    }    
+
+    .town-grid > div:nth-of-type(2) {
+        flex-direction: row;
     }    
 
 }
