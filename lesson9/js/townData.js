@@ -21,7 +21,7 @@ function Town(rainfall,
 
 function buildTownStructure(containerClass, townObject){
     let townSection = document.createElement('div');
-    container = document.querySelector(".".containerClass);
+    container = document.querySelector(containerClass);
     townSection.classList.add('townBanner')
     container.appendChild('townSection')
 }
@@ -104,8 +104,8 @@ fetch(requestURL)
             townArray["sodaSprings"]= sodaSprings;
         }   
       }
-      buildTownStructure("town-grid",townArray["preston"]);
-      buildTownStructure("town-grid",townArray["sodaSprings"]);
-      buildTownStructure("town-grid",townArray["fishHaven"]);
+      buildTownStructure(".town-grid",townArray["preston"]);
+      buildTownStructure(".town-grid",townArray["sodaSprings"]);
+      buildTownStructure(".town-grid",townArray["fishHaven"]);
 
   });
