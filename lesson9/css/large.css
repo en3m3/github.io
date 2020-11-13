@@ -107,8 +107,5 @@
         border-bottom-right-radius: 0;
         width: auto;
     }    
-
-    .events > div {
-        width: 800px;
-    }    
+  
 }
