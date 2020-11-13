@@ -54,7 +54,7 @@ function buildTownStructure(containerClass, townObject){
     cityInfo.appendChild(cityPopulation);
 
     let cityRainfall = document.createElement('p');
-    cityRainfall.textContent = `Annual rainfall: ${townObject.averageRainfall}`;
+    cityRainfall.textContent = `Annual rainfall: ${townObject.averageRainfall}"`;
     cityInfo.appendChild(cityRainfall);    
 }
 
