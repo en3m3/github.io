@@ -26,7 +26,7 @@ function buildTownStructure(containerClass, townObject){
 
     container.appendChild(townSection);
 
-    queryCity = containerClass+" townBanner:last-of-type";
+    queryCity = `${containerClass} div:last-of-type`;
     let city = document.querySelector(queryCity);
 
     let cityName = document.createElement('h3');
