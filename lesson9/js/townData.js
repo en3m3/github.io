@@ -20,7 +20,8 @@ function Town(rainfall,
 }
 
 function buildTownStructure(container, townObject){
-    let townSection = document.createElement('div')
+    let townSection = document.createElement('div');
+    let container = document.querySelector(container);
     townSection.classList.add('townBanner')
     container.appendChild('townSection')
 }
@@ -34,7 +35,6 @@ function buildTownStructure(container, townObject){
     //     h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
     //     birthday.textContent = "Date of Birth: "+ prophets[i].birthdate;
     //     birthplace.textContent = "Place of Birth: "+ prophets[i].birthplace;
-
 
     //     card.appendChild(h2);
     //     card.appendChild(birthday);
