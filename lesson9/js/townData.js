@@ -19,9 +19,9 @@ function Town(rainfall,
     return this;
 }
 
-function buildTownStructure(container, townObject){
+function buildTownStructure(containerClass, townObject){
     let townSection = document.createElement('div');
-    container = document.querySelector(container);
+    container = document.querySelector(".".containerClass);
     townSection.classList.add('townBanner')
     container.appendChild('townSection')
 }
