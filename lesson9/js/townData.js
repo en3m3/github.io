@@ -26,7 +26,7 @@ function buildTownStructure(containerClass, townObject){
 
     container.appendChild(townSection);
 
-    queryCity = `${containerClass} div:last-of-type`;
+    queryCity = `${containerClass} > div:last-of-type`;
     let city = document.querySelector(queryCity);
 
     let cityImage = document.createElement('img');
