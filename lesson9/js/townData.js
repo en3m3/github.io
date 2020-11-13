@@ -16,6 +16,7 @@ function Town(rainfall,
     this.name = name;
     this.photo = photo;
     this.founded = founded;
+    return this;
 }
 
 function getList(townEvents) {
@@ -39,7 +40,7 @@ fetch(requestURL)
         if(towns[i].name == "Fish Haven") {
             eventList = getList(towns[i].events);
 
-            var fishHaven = Town(
+            var fishHaven = new Town(
                                 towns[i].averageRainfall,
                                 towns[i].currentPopulation,
                                 eventList,
@@ -52,7 +53,7 @@ fetch(requestURL)
         } else if(towns[i].name == "Preston") {
             eventList = getList(towns[i].events);
 
-            var preston = Town(
+            var preston = new Town(
                                 towns[i].averageRainfall,
                                 towns[i].currentPopulation,
                                 eventList,
@@ -65,7 +66,7 @@ fetch(requestURL)
         } else if(towns[i].name == "Soda Springs") {
             eventList = getList(towns[i].events);
 
-            var sodaSprings = Town(
+            var sodaSprings = new Town(
                                 towns[i].averageRainfall,
                                 towns[i].currentPopulation,
                                 eventList,
