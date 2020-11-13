@@ -29,6 +29,11 @@ function buildTownStructure(containerClass, townObject){
     queryCity = `${containerClass} div:last-of-type`;
     let city = document.querySelector(queryCity);
 
+    let cityImage = document.createElement('img');
+    cityImage.src = `images/${townObject.photo}`
+    cityImage.alt = `photo of ${townObject.name}`
+    city.appendChild(cityImage);
+
     let cityName = document.createElement('h3');
     cityName.textContent = townObject.name;
     city.appendChild(cityName);
