@@ -23,7 +23,29 @@ function buildTownStructure(containerClass, townObject){
     let townSection = document.createElement('div');
     container = document.querySelector(containerClass);
     townSection.classList.add('townBanner');
+
     container.appendChild(townSection);
+    let city = document.querySelector(containerClass+" townBanner:last-of-type");
+
+    let cityName = document.createElement('h3');
+    cityName.textContent = townObject.name;
+    city.appendChild(cityName);
+
+    let cityMotto = document.createElement('h4');
+    cityMotto.textContent = townObject.motto;
+    city.appendChild(cityMotto);
+
+    let cityFounded = document.createElement('p');
+    cityFounded.textContent = `Year founded: ${townObject.name}`;
+    city.appendChild(cityFounded);
+
+    let cityPopulation = document.createElement('p');
+    cityPopulation.textContent = `Population: ${townObject.population}`;
+    city.appendChild(cityPopulation);
+
+    let cityRainfall = document.createElement('p');
+    cityRainfall.textContent = `Annual rainfall: ${townObject.rainfall}`;
+    city.appendChild(cityRainfall);    
 }
 
 
