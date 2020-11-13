@@ -158,4 +158,8 @@
         flex-direction: row-reverse;
     }    
 
+    .town-grid > div:nth-of-type(2) > img {
+        padding-right: 0;
+    }        
+
 }
