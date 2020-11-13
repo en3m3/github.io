@@ -738,6 +738,7 @@ input[type="radio"]:focus {
 
 .events {
     min-height: 200px;
+    height: auto;
     border: 3px solid #000;
     box-shadow: 0 7px 10px 5px #555;
     border-top: none;
