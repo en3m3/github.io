@@ -162,8 +162,11 @@
     }   
 
     .home-hero {
-        background-image: url(../images/homehero.jpg);
+        background-image: url(../images/homeheromd.jpg);
         min-height: 300px;  
     }     
+    .events {
+        background-image: url(../images/eventbg.jpg);
+    }    
 
 }
