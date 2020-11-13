@@ -34,25 +34,28 @@ function buildTownStructure(containerClass, townObject){
     cityImage.alt = `photo of ${townObject.name}`
     city.appendChild(cityImage);
 
+    let cityInfo = document.createElement('div');
+    city.appendChild(cityInfo);
+
     let cityName = document.createElement('h3');
     cityName.textContent = townObject.name;
-    city.appendChild(cityName);
+    cityInfo.appendChild(cityName);
 
     let cityMotto = document.createElement('h4');
     cityMotto.textContent = townObject.motto;
-    city.appendChild(cityMotto);
+    cityInfo.appendChild(cityMotto);
 
     let cityFounded = document.createElement('p');
     cityFounded.textContent = `Year founded: ${townObject.name}`;
-    city.appendChild(cityFounded);
+    cityInfo.appendChild(cityFounded);
 
     let cityPopulation = document.createElement('p');
     cityPopulation.textContent = `Population: ${townObject.population}`;
-    city.appendChild(cityPopulation);
+    cityInfo.appendChild(cityPopulation);
 
     let cityRainfall = document.createElement('p');
     cityRainfall.textContent = `Annual rainfall: ${townObject.rainfall}`;
-    city.appendChild(cityRainfall);    
+    cityInfo.appendChild(cityRainfall);    
 }
 
 function getList(townEvents) {
