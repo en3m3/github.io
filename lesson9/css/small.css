@@ -749,7 +749,7 @@ input[type="radio"]:focus {
 
 .home-hero {
     background-image: url(../images/homehero.jpg);
-    min-height: 100px;
+    min-height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;     
