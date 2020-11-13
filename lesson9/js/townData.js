@@ -19,6 +19,32 @@ function Town(rainfall,
     return this;
 }
 
+function buildTownStructure(container, townObject){
+    let townSection = document.createElement('div')
+    townSection.classList.add('townBanner')
+    container.appendChild('townSection')
+}
+
+
+    //     let card = document.createElement('section');
+    //     let h2 = document.createElement('h2');
+    //     let birthday = document.createElement('p');
+    //     let birthplace = document.createElement('p');
+    //     let image = document.createElement('img');
+    //     h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+    //     birthday.textContent = "Date of Birth: "+ prophets[i].birthdate;
+    //     birthplace.textContent = "Place of Birth: "+ prophets[i].birthplace;
+
+
+    //     card.appendChild(h2);
+    //     card.appendChild(birthday);
+    //     card.appendChild(birthplace);
+    //     card.appendChild(image); 
+    //     image.setAttribute('src', prophets[i].imageurl);
+    //     document.querySelector('.cards').appendChild(card);
+
+
+
 function getList(townEvents) {
     var events = [];
     townEvents.forEach(element => {
@@ -78,25 +104,8 @@ fetch(requestURL)
             townArray["sodaSprings"]= sodaSprings;
         }   
       }
-      console.log(fishHaven);
-      console.log(sodaSprings);
-      console.log(preston);
-      console.log(townArray);
+      buildTownStructure("town-grid",townArray["preston"]);
+      buildTownStructure("town-grid",townArray["sodaSprings"]);
+      buildTownStructure("town-grid",townArray["fishHaven"]);
+
   });
-
-      //     let card = document.createElement('section');
-    //     let h2 = document.createElement('h2');
-    //     let birthday = document.createElement('p');
-    //     let birthplace = document.createElement('p');
-    //     let image = document.createElement('img');
-    //     h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-    //     birthday.textContent = "Date of Birth: "+ prophets[i].birthdate;
-    //     birthplace.textContent = "Place of Birth: "+ prophets[i].birthplace;
-
-
-    //     card.appendChild(h2);
-    //     card.appendChild(birthday);
-    //     card.appendChild(birthplace);
-    //     card.appendChild(image); 
-    //     image.setAttribute('src', prophets[i].imageurl);
-    //     document.querySelector('.cards').appendChild(card);
