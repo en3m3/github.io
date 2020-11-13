@@ -1,11 +1,5 @@
 const requestURL = 'towndata.json';
 var townArray = [];
-function Person(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
-  }
 
 function Town(rainfall,
               population,
@@ -22,7 +16,6 @@ function Town(rainfall,
     this.name = name;
     this.photo = photo;
     this.founded = founded;
-    return this;
 }
 
 function getList(townEvents) {
