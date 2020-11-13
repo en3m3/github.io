@@ -137,7 +137,7 @@ fetch(requestURL)
 
       let sodaSpringsEvents = document.createElement("div");
       sodaSpringsEvents.appendChild(document.createElement("h3"));
-      sodaSpringsEvents.querySelector("h3").textContent = "Preston";
+      sodaSpringsEvents.querySelector("h3").textContent = "Soda Spring";
 
       townArray["sodaSprings"].events.forEach(event => {
         let eventContent = document.createElement("p")
@@ -149,7 +149,7 @@ fetch(requestURL)
 
       let fishHavenEvents = document.createElement("div");
       fishHavenEvents.appendChild(document.createElement("h3"));
-      fishHavenEvents.querySelector("h3").textContent = "Preston";
+      fishHavenEvents.querySelector("h3").textContent = "Fish Haven";
 
       townArray["fishHaven"].events.forEach(event => {
         let eventContent = document.createElement("p")
