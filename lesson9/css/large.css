@@ -59,4 +59,34 @@
         padding: .4rem 0;
     }
 
+    /* home page */
+    .town-grid {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .town-grid > div {
+        padding: 0 10px 0 0;
+        margin: 20px auto;
+        max-width: 400px;
+        flex-direction: column;
+    }
+
+    .town-grid > div > div {
+        text-align: left;
+        margin: 0;
+        padding: 15px;
+    }    
+
+    .town-grid img {
+        margin: 6px 6px 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }    
+    .town-grid h3 {
+        padding: 10px 0;
+        margin-bottom: 15px;
+    }    
+
 }
