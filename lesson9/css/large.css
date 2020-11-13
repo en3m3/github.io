@@ -59,6 +59,15 @@
     }
 
     /* home page */
+    .home-hero {
+        background-image: url(../images/homehero.jpg);
+        min-height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;     
+    }
+
+
     .town-grid {
         display: flex;
         justify-content: space-around;
