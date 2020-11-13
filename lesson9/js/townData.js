@@ -9,7 +9,7 @@ function Town(rainfall,
               photo,
               founded
               ) {
-    this.averageRainFall = rainfall;
+    this.averageRainfall = rainfall;
     this.population = population
     this.events = events;
     this.motto = motto;
