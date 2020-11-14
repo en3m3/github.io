@@ -752,7 +752,7 @@ input[type="radio"]:focus {
     align-items: flex-end;
 }
 .events > div{
-    width: auto;
+    width: 200px;
 }
 
 .home-hero {
