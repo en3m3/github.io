@@ -5,7 +5,7 @@
 
 const bodyClasses = document.body.classList;
 console.log(bodyClasses);
-if(bodyClasses.contains("preston")) {
+if(bodyClasses.contains("preston") || bodyClasses.contains("apiTest")) {
     var requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ee95bdb22401d075cd5b22ae078a154f";
 } else if(bodyClasses.contains("sodaSprings")) {
     var requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=ee95bdb22401d075cd5b22ae078a154f";
