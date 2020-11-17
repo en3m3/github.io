@@ -1,4 +1,4 @@
-const requestURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ee95bdb22401d075cd5b22ae078a154f"
+const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ee95bdb22401d075cd5b22ae078a154f"
 
 /* Preston: 5604473     */
 /* Soda Springs 5607916 */
