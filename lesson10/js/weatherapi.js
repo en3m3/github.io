@@ -1,10 +1,15 @@
-const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ee95bdb22401d075cd5b22ae078a154f"
 
 /* Preston: 5604473     */
 /* Soda Springs 5607916 */
 /* Fish Haven: 5585010  */
 
-
+if(document.body.classList.contains("preston")) {
+    const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=ee95bdb22401d075cd5b22ae078a154f";
+} else if(document.body.classList.contains("sodaSprings")) {
+    const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=ee95bdb22401d075cd5b22ae078a154f";
+} else if(document.body.classList.contains("fishHaven")) {
+    const requestURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=ee95bdb22401d075cd5b22ae078a154f";
+}
 
 fetch(requestURL)
     .then(function (response) {
