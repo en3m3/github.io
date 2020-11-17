@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sherman Peak Weather | Storm Center</title>
+    <title>Sherman Peak Weather | Storm Center | API Test</title>
     <meta content="" name="author">
-    <meta content="Sherman Peak Weather" name="description">
+    <meta content="API Test" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/debug.css" rel="stylesheet">
@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
-<body class="thanks">
+<body>
     <header>
         <div class="top-bar">
             <img src="images/logo_white.png"
@@ -29,21 +29,23 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="preston-9.html">Preston</a>
+                <li class="active"><a href="preston-10.html">Preston</a>
                 </li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery-9.html">Gallery</a></li>
+                <li><a href="gallery-10.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
 
 <body class="thanks">
     <main>      
-        <h1>Thank You For Your Submission <span id="name"></span>!</h1>
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+        <hr>
+        <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
     </main>
-</body>
 <footer>
     <div class="fifty-percent">
         <div class="footer-cta">
@@ -84,6 +86,7 @@
 <script
     src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
 </script>
+<script src="js/weatherapi.js"></script>    
 <script src="js/script.js"></script>
-<script src="js/formhandle.js"></script>
+</body>
 </html>
