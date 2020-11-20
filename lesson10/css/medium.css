@@ -70,9 +70,9 @@
 
     .weather-summary {
         position: absolute;
-        top: 20px;
+        top: 5px;
         left: 30px;
-        min-height: 300px;
+        min-height: 200px;
         height: auto;
         width: auto;
         border-radius: 15px;
@@ -85,8 +85,10 @@
         border-color: #fffdf0;
     }
 
-    .five-forecast {
-        grid-template: 1fr / repeat(5, 1fr);
+    .five-day {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
     }
 
     .preston article {
@@ -123,6 +125,16 @@
 
     .footer-cta>p>a {
         margin-left: 0;
+    }
+
+    
+    .footer-cta>p>a::before {
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-size: cover;
+        left: -40px;
     }
 
 

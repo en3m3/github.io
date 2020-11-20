@@ -165,10 +165,14 @@ main>h2 {
     height: auto;
     color: var(--dark-1);
     width: 100%;
-    padding: 20px;
+    padding: 0 5px;
     border: 3px solid #46786e;
     box-shadow: 0px 3px 9px 3px #000;
     border-radius: 5px;
+}
+
+.weather-summary li img{
+    vertical-align: middle;
 }
 
 .weather-summary>h3 {
@@ -187,6 +191,10 @@ main>h2 {
     margin: auto;
 }
 
+.weather-summary #current {
+    text-transform: capitalize;
+}
+
 .hero-box {
     position: relative;
 }
@@ -198,9 +206,9 @@ main>h2 {
 }
 
 .five-day {
-    background-image: url(../images/fiveday.jpg);
-    background-size: cover;
     color: #fff;
+    background-color: #1a3639;
+    padding: 30px 10px;
 }
 
 .five-day h3 {
@@ -215,33 +223,40 @@ main>h2 {
 
 .forcast-day {
     background-color: rgba(53, 100, 116, .75);
-    margin: 15px 5px;
-    padding: 0 25px 25px;
-    border: 3px solid #0b2027;
+    padding: 10px 25px 25px;
+    border: 3px solid #fff;
     border-top-left-radius: 30px;
     border-top-right-radius: 15px;
     position: relative;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    align-items: center;
+    margin: 20px 0;    
 }
 
-.forcast-day>p>img {
-    width: 50px;
+.forcast-day img {
+    width: 70px;
     display: block;
+}
+
+.forcast-day>div>p {
+    text-align: right;
+    text-transform: capitalize;
+    margin-top: 0;
 }
 
 .forcast-day:nth-child(even) {
     background-color: rgba(11, 32, 39, .75);
-    border: 3px solid #0b2027;
     border-top-left-radius: 30px;
     border-top-right-radius: 15px;
 }
 
-.forcast-day>p>span {
-    float: right;
-}
 
-.forcast-day>p>.day-of-week {
-    position: relative;
-    top: -20px;
+.day-of-week {
+    grid-column: 1/3;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 4px double #fff;    
 }
 
 #friday-notice {
@@ -327,19 +342,7 @@ footer .social-media>li:first-of-type {
 
 .footer-cta>p>a {
     position: relative;
-    margin-left: 20px;
 }
-
-.footer-cta>p>a::before {
-    content: "";
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    background-size: cover;
-    left: -40px;
-}
-
-
 
 footer .address {
     display: none;
