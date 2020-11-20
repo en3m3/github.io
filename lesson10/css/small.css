@@ -209,6 +209,7 @@ main>h2 {
     color: #fff;
     background-color: #1a3639;
     padding: 30px 10px;
+    text-transform: capitalize;
 }
 
 .five-day h3 {
