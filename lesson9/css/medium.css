@@ -128,22 +128,22 @@
 
     form {
         max-width: 700px;
-    }  
-    
+    }
+
     .town-grid img {
         border-radius: 8px;
         width: 50%;
         height: auto;
         margin: 6px auto 6px 3px;
-    }  
+    }
 
-    .town-grid > div > div {
+    .town-grid>div>div {
         text-align: left;
         margin: 0 50px 0 15px;
         padding: 30px 0;
-    }    
+    }
 
-    .town-grid > div {
+    .town-grid>div {
         padding: 0 10px;
         padding-left: 0;
         max-width: 1500px;
@@ -152,29 +152,30 @@
         justify-content: space-between;
     }
 
-    .town-grid > div:nth-of-type(2) {
+    .town-grid>div:nth-of-type(2) {
         flex-direction: row-reverse;
         padding-right: 0;
-    }    
+    }
 
-    .town-grid > div:nth-of-type(2) img {
+    .town-grid>div:nth-of-type(2) img {
         margin: 6px 3px 6px auto;
-    }   
+    }
 
     .home-hero {
         background-image: url(../images/homeheromd.jpg);
-        min-height: 300px;  
-    }     
+        min-height: 300px;
+    }
+
     .events {
         background-image: url(../images/eventbg.jpg);
         min-height: 500px;
         padding: 50px;
-    }  
+    }
 
-    .events > div{
+    .events>div {
         width: 650px;
     }
-    
-    
+
+
 
 }
