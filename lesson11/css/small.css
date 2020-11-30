@@ -17,6 +17,11 @@
 /*********************/
 /* All Pages         */
 /*********************/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 html,
 body {
     max-width: 100%;
@@ -204,13 +209,15 @@ main>h2 {
     border: 5px double rgb(53, 100, 116);
     border-radius: 20px;
     margin: 15px 5px;
+    background-color: #1a3639;    
 }
 
 .five-day {
     color: #fff;
-    background-color: #1a3639;
     padding: 30px 10px;
     text-transform: capitalize;
+    max-width: 350px;
+    margin: auto;    
 }
 
 .five-day h3 {
@@ -239,6 +246,11 @@ main>h2 {
 .forcast-day img {
     width: 70px;
     display: block;
+    justify-self: center;
+}
+
+.forcast-day > p:nth-of-type(2) {
+    justify-self: center;
 }
 
 .forcast-day>div>p {
@@ -280,16 +292,20 @@ main>h2 {
     align-items: center;
 }
 
-.preston article {
-    padding: 25px;
+article {
+    padding: 1% 3%;
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .preston article iframe {
     display: none;
 }
 
-.preston article img {
-    max-height: 300px;
+article img {
+    display: block;
+    margin: 15px auto;
 }
 
 footer {
@@ -498,6 +514,10 @@ nav a:visited {
 }
 
 /* Form Styling */
+form {
+    margin: auto;
+}
+
 form fieldset {
     margin: 1rem 0;
     border: 1px solid rgb(53, 100, 116);;
@@ -609,16 +629,16 @@ input[type=range] {
   }
 
 input::-webkit-slider-runnable-track { 
-    background: rgb(215,232,29);
-    background: linear-gradient(90deg, rgba(215,232,29,1) 0%, rgba(255,170,27,1) 25%, rgba(196,12,12,1) 50%, rgba(120,0,255,1) 75%, rgba(0,15,255,1) 100%);
+    background: rgb(50,232,29);
+    background: linear-gradient(90deg, rgba(50,232,29,1) 0%, rgba(215,232,29,1) 25%, rgba(255,170,27,1) 75%, rgba(255,27,27,1) 100%);
 }
 input::-moz-range-track { 
-    background: rgb(215,232,29);
-    background: linear-gradient(90deg, rgba(215,232,29,1) 0%, rgba(255,170,27,1) 25%, rgba(196,12,12,1) 50%, rgba(120,0,255,1) 75%, rgba(0,15,255,1) 100%);  
+    background: rgb(50,232,29);
+    background: linear-gradient(90deg, rgba(50,232,29,1) 0%, rgba(215,232,29,1) 25%, rgba(255,170,27,1) 75%, rgba(255,27,27,1) 100%);
 }
 input::-ms-track { 
-    background: rgb(215,232,29);
-    background: linear-gradient(90deg, rgba(215,232,29,1) 0%, rgba(255,170,27,1) 25%, rgba(196,12,12,1) 50%, rgba(120,0,255,1) 75%, rgba(0,15,255,1) 100%);
+    background: rgb(50,232,29);
+    background: linear-gradient(90deg, rgba(50,232,29,1) 0%, rgba(215,232,29,1) 25%, rgba(255,170,27,1) 75%, rgba(255,27,27,1) 100%);
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -754,10 +774,10 @@ input[type="radio"]:focus {
     padding: 15px 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: start;
 }
 .events > div{
-    width: 200px;
+    padding: 5px 15px;
 }
 
 .home-hero {

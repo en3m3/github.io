@@ -32,7 +32,7 @@
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
@@ -52,7 +52,7 @@
                 <label class="top">Phone
                     <input type="tel"  name="phone" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" placeholder="8885551234" required>
                 </label>
-                <label class="top">
+                <label class="top">Zip Code
                     <input type="number" name="zip" placeholder="90210" required>
                 </label>
             </fieldset>
@@ -89,7 +89,7 @@
                 </label>
                 <label >Storm Region
                     <select name="region">
-                        <option value="" disabled>Enter Region...</option>
+                        <option value="" disabled selected>Enter Region...</option>
                         <option value="Preston">Preston</option>
                         <option value="sodaSprings">Soda Springs</option>
                         <option value="fishHaven">Fish Haven</option>

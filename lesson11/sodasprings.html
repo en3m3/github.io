@@ -28,7 +28,7 @@
         </div>
         <nav>
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
                 <li><a href="fishhaven.html">Fish Haven</a></li>
@@ -44,10 +44,10 @@
         <section class="hero-box">
             <picture>
                 <source media="(max-width:600px)"
-                    srcset="images/sodasprings.jpg">
+                    srcset="images/sodaspringsherosm.jpg">
                 <source media="(max-width: 1026px) and (min-width: 601px)"
-                    srcset="images/sodasprings.jpg">
-                <img src="images/sodasprings.jpg"
+                    srcset="images/sodaspringsheromd.jpg">
+                <img src="images/sodaspringshero.jpg"
                     alt="Sunny landscape picture">
             </picture>
             <div class="weather-summary">
@@ -65,46 +65,31 @@
         <section class="detailed-weather">
             <div class="five-day"></div>
             <article>
-                <h4>Holiday Craft Fair</h4>
-                <div class="article-content">
-                    <picture>
-                        <source media="(min-width:800px)"
-                            srcset="images/winterfair.jpg">
-                        <img src="images/winterfairsm.jpg"
-                            alt="Winter Craft Fair" class="article-image">
-                    </picture>
-                    <div>
-                        <p>The Holiday craft fair is coming this November.
-                            Get
-                            started with your holiday shopping
-                            browsing the unique hand made or rare crafts.
-                        </p>
+                <picture>
+                    <source media="(min-width:1229px)"
+                        srcset="images/treeLighting.jpg">
+                    <img data-src="images/treeLightingsm.jpg" src="images/gallery/placeholder.jpg"
+                        alt="Christmas Tree Lighting" class="article-image">
+                </picture>
+                <h4>Christmas Tree Lighting</h4>
+                <div class="article-content clearfix">
 
-                        <p> Filler Text: Since they are still preserved in
-                            the
-                            rocks for us to see, they must have been formed
-                            quite recently, that is, geologically speaking.
-                            What can explain these striations and their
-                            common
-                            orientation? Did you ever hear about the Great
-                            Ice
-                            Age or the Pleistocene Epoch? Less than one
-                            million
-                            years ago, in fact, some 12,000 years ago, an
-                            ice
-                            sheet many thousands of feet thick rode over
-                            Burke
-                            Mountain in a southeastward direction. The many
-                            boulders frozen to the underside of the ice
-                            sheet
-                            tended to scratch the rocks over which they
-                            rode.
-                            The scratches or striations seen in the park
-                            rocks
-                            were caused by these attached boulders. The ice
-                            sheet also plucked and rounded Burke Mountain
-                            into
-                            the shape it possesses today.
+                    <div>
+                        <p>
+                            The Annual Community Christmas Tree Lighting will be held
+                            on the 4th in Kelly Park. Wear your winter
+                            clothes and share in the start of our Chritmas season. A
+                            traditional caroling group will be performing at 7:30 PM.
+                        </p>
+                        <p> 
+                            Date: December 4th, 2020
+                        </p>
+                        <ul>
+                            <li>7:00 - Tree Lighting</li>
+                            <li>7:30 - Caroling</li>
+                        </ul>
+                        <p> 
+                            Cocoa will be served.
                         </p>
                     </div>
                 </div>
@@ -155,7 +140,7 @@
     <script src="js/weatherapi.js"></script>  
     <script src="js/script.js"></script>
     <script src="js/windchill.js"></script>      
-
+    <script src="js/lazy.js"></script>
 </body>
 
 </html>

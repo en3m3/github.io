@@ -84,15 +84,11 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 10px;
+        max-width: 1000px;        
     }
 
     .preston article {
-        min-height: 500px;
-        padding: 25px;
-    }
-
-    .preston article img {
-        float: right;
+        padding: 1% 3%;
     }
 
     .preston article .article-content {
@@ -176,6 +172,7 @@
         background-image: url(../images/eventbg.jpg);
         min-height: 500px;
         padding: 50px;
+        align-items: flex-end;        
     }  
 
     .events > div{
